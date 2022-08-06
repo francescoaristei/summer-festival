@@ -154,39 +154,50 @@ export default async (models) => {
 
     const artistsList = [
         {
-            id: "",
-            name: "",
-            img: "",
-            description: "",
-            info: "",
+            id: "1",
+            name: "Blanco",
+            img: "artist1",
+            description: `Riccardo Fabbriconi (born 10 February 2003), known professionally as Blanco, is an Italian singer, rapper and songwriter.[1] He rose to fame following the success of his singles "Mi fai impazzire" and "La canzone nostra". In 2022, he won the Sanremo Music Festival 2022 alongside Mahmood with the song "Brividi", and represented host nation Italy at the Eurovision Song Contest 2022 in Turin.`,
+            info: "https://www.instagram.com/blanchitobebe/",
         },
         {
-            id: "",
-            name: "",
-            img: "",
-            description: "",
-            info: "",
+            id: "2",
+            name: "Fabio Volo",
+            img: "artist2",
+            description: `Fabio Bonetti was born in Calcinate, Italy on 23 June 1972. After attending middle school, he worked in his father's bakery (which is now an ice-cream shop in Brescia) and did other casual jobs (like modeling and nightlife related). In 1996 he became a leading figure at Radio Capital, an Italian radio station. As from 1998, he anchored three edition of the TV program Le Iene
+            In 2000 he began to anchor his own radio broadcast "Il volo del mattino" on Radio Deejay and he published his first book entitled "Esco a fare due passi". This was followed by "È una vita che ti aspetto", "Un posto nel mondo", "Il giorno in più", "Il tempo che vorrei", "Le prime luci del mattino" and "La strada verso casa".
+            In 2002 he debuted as an actor in Alessandro D'Alatri's movie "Casomai". He was nominated for Best Actor at the David di Donatello for his role in this film. In 2006 and 2008 Fabio Volo anchored "Italo Spagnolo" and "Italo Americano" on MTV. In 2010 he won the "Premio Letterario la Tore Isola d'Elba", an ingenuity and excellence award. In 2011, Volo starred in "Il giorno in più", the movie based on his eponymous book. In 2012 he returned in television with "Volo in diretta" on Rai 3.
+            Internationally, Volo has served as the voice of Po in the Italian version of the Kung Fu Panda film series.`,
+            info: "https://www.instagram.com/volofabio/",
         },
         {
-            id: "",
-            name: "",
-            img: "",
-            description: "",
-            info: "",
+            id: "3",
+            name: "Marracash",
+            img: "artist3",
+            description: `Marracash, pseudonym of Fabio Bartolo Rizzo (Nicosia, 22 May 1979), is an Italian rapper.
+            Considered by critics as one of the best rappers on the Italian scene, made his debut in 2005 with the self-produced mixtape Roccia Music I, which saw the participation of the collective Dogo Gang and other artists belonging to the Italian hip hop scene. The mixtape got a significant response in the underground hip hop scene and led him to the signing of a recording contract with Universal Music Group, with which in 2008 he released his first solo album, the homonymous Marracash.
+            In 2013 he founded together with the producer Shablo the independent record label Roccia Music, which involved established and emerging figures of Italian hip hop, including rappers, producers and DJs.
+            In 2022 he won the Tenco plaque as "Best Album ever", with “Noi, loro, gli altri”.`,
+            info: "https://www.instagram.com/kingmarracash/",
         },
         {
-            id: "",
-            name: "",
-            img: "",
-            description: "",
-            info: "",
+            id: "4",
+            name: "Alessandro Cattelan",
+            img: "artist4",
+            description: `Alessandro Cattelan was born in Tortona on 11 May 1980.
+            He led, among others, MTV's flagship TRL program and co-conceived, wrote and conducted together with Francesco Mandelli, Lazarus, a cult program for the latest generation of the same network. He was a hyena, comic shoulder to "Quelli che il calcio", and to this day appreciated host of the most famous talent show in the world: X Factor.
+            His radio career officially began in 2001 at Radio Kiss Kiss, to then quickly continue to RTL and reach the consecration on Radio 105. 
+            Alessandro Cattelan has written and published three novels for Mondadori.`,
+            info: "https://www.instagram.com/alecattelan/",
         },
         {
-            id: "",
-            name: "",
-            img: "",
-            description: "",
-            info: "",
+            id: "5",
+            name: "Ghali",
+            img: "artist5",
+            description: `Ghali Amdouni, known by the mononym Ghali (born 21 May 1993), is an Italian rapper and record producer. Born in Milan to Tunisian parents,[1] he originally started his career using the pseudonym Fobia. He would like to become a father but his mother doesn’t let him have a son.
+            One of the leading figures in Italian rap at the end of the 2010s, he released two albums reaching the top 10 of the Italian charts supported by many successful hits, with six top positions in the FIMI chart, including "Happy Days", "Ninna Nanna", "Cara Italia", "Peace & Love" and "Good Times".
+            As of 2020 Ghali had sold over 1.6 million copies in Italy, collaborating with numerous Italian artists such as Fedez, Gué Pequeno, Sfera Ebbasta, Salmo, and international artists like Ed Sheeran, Stormzy and Travis Scott.`,
+            info: "https://www.instagram.com/ghali/",
         },
         {
             id: "",
