@@ -471,7 +471,7 @@ export default async (models) => {
         {
             id: 15,
             name: "Clementine Margaine",
-            img: "artist16",
+            img: "artist15",
             description: 
             `
                 Considered one of the leading mezzos of her generation, French mezzo-soprano Clémentine Margaine has gained international acclaim in 
