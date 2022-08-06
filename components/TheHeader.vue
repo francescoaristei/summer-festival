@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <a class="navbar-brand" href="/">The Cat Shelter</a>
+    <a class="navbar-brand" href="/">AIA Music Festival</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
+    <div id="navbarToggler" class="collapse navbar-collapse" >
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -29,16 +29,6 @@
   </nav>
 </template>
 
-<style scoped>
-.header {
-  background: orange;
-}
-.logo {
-  color: white;
-  font-size: 32px;
-}
-</style>
-
 <script>
 export default {
   name: 'TheHeader',
@@ -50,11 +40,23 @@ export default {
           path: '/',
         },
         {
-          name: 'List',
-          path: '/list',
+          name: 'EVENTS',
+          path: '/',
         },
         {
-          name: 'About',
+          name: 'ARTISTS',
+          path: '/',
+        },
+        {
+          name: 'PLACES',
+          path: '/',
+        },
+        {
+          name: 'CONTACT US',
+          path: '/',
+        },
+        {
+          name: 'ABOUT US',
           path: '/about',
         },
       ],
@@ -62,3 +64,18 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.header {
+  background: white;
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+
+.nav-item{
+  float: right;
+}
+</style>
+
