@@ -59,9 +59,9 @@ async function initializeDatabaseConnection() {
             primaryKey: true,
         },
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
+        description: DataTypes.TEXT,
         info: DataTypes.STRING,
-        name: DataTypes.STRING
+        img: DataTypes.STRING,
     },{timestamps:false})
 
     // -----ASSOCIATIONS-----

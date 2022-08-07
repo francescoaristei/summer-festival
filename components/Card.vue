@@ -1,44 +1,36 @@
 <template>
-  <div class="card" style="width: 18rem">
-    <div
-      class="card-img-top card-image"
-      :style="{ 'background-image': 'url(' + img + ')' }"
-    ></div>
-    <div class="card-body">
-      <h5 class="card-title">{{ name }}</h5>
-      <p class="card-text">
-        {{ breed }}
-      </p>
-      <nuxt-link :to="`/details/${id}`">
-        <div class="btn btn-primary btn-orange">See Details</div>
-      </nuxt-link>
+  <div class="col mb-5">
+    <div class="card h-100">
+      <!-- event image-->
+      <img class="card-img-top" :src="getImgUrl(img)" :alt="img" />
+      <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Event name-->
+                <h5 class="fw-bolder">{{name}}</h5>
+            </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <nuxt-link :to="`/details/${id}`">
+              <div class="btn btn-outline-dark mt-auto">Details</div>
+
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.card {
-  border: 2px solid lightgray;
-}
-.card:hover {
-  border: 2px solid orange;
-}
-.btn-orange {
-  background-color: orange;
-  border: 2px solid orange;
-}
-.card-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 160px;
-}
 </style>
 
 <script>
 export default {
-  name: 'CardComponent',
+  title: 'Event',
   props: {
+    id:{
+      type: Number,
+      required: true,
+    },
     name: {
       type: String,
       required: true,
@@ -47,19 +39,11 @@ export default {
       type: String,
       required: true,
     },
-    id: {
-      type: Number,
-      required: true,
-    },
-    breed: {
-      type: String,
-      required: true,
-    },
   },
   methods: {
-    goToDetails() {
-      this.$router.push(`/details/${this.id}`)
-    },
-  },
+    getImgUrl(img) {
+      return require(`../assets/events/` + img + `.jpg`)
+    }
+  }
 }
 </script>
