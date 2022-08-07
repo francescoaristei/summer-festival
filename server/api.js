@@ -59,9 +59,9 @@ async function initializeDatabaseConnection() {
             primaryKey: true,
         },
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
+        description: DataTypes.TEXT,
         info: DataTypes.STRING,
-        name: DataTypes.STRING
+        img: DataTypes.STRING,
     },{timestamps:false})
 
     // -----ASSOCIATIONS-----
@@ -115,10 +115,21 @@ const pageContentObject = {
         description4: "OR START A JOURNEY FOLLOWING ONE OF THE ITINERARY WE HAVE PREPARED FOR YOU",
     },
     aboutUs: {
-        title: "Milano",
-        img1: "front_page",
-        img2: "overview",
-        description:""
+        title: "Milan Arts Experience",
+        festival_description:
+        `
+            Milan Arts Experience welcomes hundreds of thousands of people each summer and aims to bring the biggest names in the art industry
+            from the widest variety of genres. Milan Arts Experience, however, is not only about the artistic experiences, 
+            but a whole lot more: It's about love, art and freedom in all possible forms! It's a cultural festival offering visitors 
+            the summer of a lifetime full of concerts, art programs, performances and much more. Is a place for for you to truly be yourself!
+            Life at the festival just never stops. Each day, the greatest of bands and artists come on and walk off stage in the most spectacular scenes of Milan and Verona:
+            The Arena di Verona, the Teatro alla Scala, the Parco Sempione or the Stadio San Siro and so on. Concerts and artistic performances go on from early 
+            afternoon every day and last until the break of dawn. If you feel like catching a small break in-between gigs, you can choose from the widest scale of activities Milan has to offer, 
+            watching art site, getting artsy, doing sports offline or online or just chilling around the city.
+        `,
+        when: "During the months of August and September",
+        where:"Milan and Verona",
+        map: ""
     },
     contactUs:{
         title: "CONTACT US",

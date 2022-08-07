@@ -17,7 +17,7 @@ export default async (models) => {
                 “Si tu ne m'aimes pas, je t'aime/Si je t'aime, prends garde à toi!” (If you don't love me, I love you/If I love you, you'd better watch out!)`,
             type: "Opera",
             date: "27-08-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 2
         },
         {
@@ -34,7 +34,7 @@ export default async (models) => {
                 to draw in and celebrate the world of international dance and ballet.`,
             type: "Dance",
             date: "20-08-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 1
         },
         {
@@ -45,9 +45,9 @@ export default async (models) => {
                 `Tuesady 30th of June from 18:00 LOVE MI is live, a huge charity concert held in Piazza Duomo in Milan. 
                 The live event has been thinked and organized by Fedez, in order to collect the moneys needed to build the new TOG centre. 
                 This event is an extraordinary initiative for the city of Milan, for its people and especially for the children of the TOG centre.`,
-            type: "",
+            type: "Music",
             date: "30-08-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 4
         },
         {
@@ -62,7 +62,7 @@ export default async (models) => {
                 will be top ballet stars from the most prestigious companies.`,
             type: "Dance",
             date: "05-09-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId:2
         },
         {
@@ -75,9 +75,9 @@ export default async (models) => {
                 with the refined costumes of Maurizio Millenotti. In spite of an unfavourable destiny, 
                 Violetta and Alfredo will love each another on the 10th September 2022
                 in the name of that sentiment that ”is the pulse/Of the whole universe/Mysterious and proud/Torture and delight to the heart!" `,
-            type: "",
+            type: "Opera",
             date: "10-09-2022",
-            ticket: "Opera",
+            ticket: "FILL",
             placeId:2
         },
         {
@@ -91,7 +91,7 @@ export default async (models) => {
                 from Achille Lauro to Blanco, numerous artists will join the Milano Summer Festival to let you enjoy to its full the city of Milan`,
             type: "Music",
             date: "07-09-2022 to 09-09-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 3
         },
         {
@@ -107,9 +107,9 @@ export default async (models) => {
                 Backstage, to collect the emotions of the artists, there will be Manola Moslehi, 
                 while it will be up to Daniela Cappelletti to intercept the enthusiasm of the public in the square. 
                 The opening theme song of the event will be performed live, as in previous editions, by bassist Saturnino.`,
-            type: "",
+            type: "Music",
             date: "21-08-2022",
-            ticket: "Music",
+            ticket: "FILL",
             placeId:4
         },
         {
@@ -126,7 +126,7 @@ export default async (models) => {
                 Two days of music, shows, meetings, food and of course races. I can't wait".`,
             type: "Music",
             date: "25-08-2022 and 26-08-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 5
         },
         {
@@ -142,7 +142,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "10-09-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 3
         },
         {
@@ -163,7 +163,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "12-09-2022",
-            ticket: "",
+            ticket: "FILL",
             placeId: 1
         },
     ]
@@ -172,7 +172,7 @@ export default async (models) => {
 
     const placesList = [
         {
-            id: "1",
+            id: 1,
             name: "Teatro alla Scala",
             img: "place1",
             description: `The teatro alla scala was founded, under the auspices of the Empress Maria Theresa of Austria, to replace the Royal ducal theatre, which was destroyed by fire on 26 February 1776 and had until then been home the home of the opera in Milan. The cost of building the new theatre was borne by the owners of the boxes at the Ducal, in exchange for possession of the land on which stood the church of Santa Maria alla Scala (hence the name) and for renewed ownership of their boxes. 
@@ -181,7 +181,7 @@ export default async (models) => {
             map: "https://www.google.com/maps/d/u/1/embed?mid=1vdHXrd1ffLwvym_H1Qqa8XGP29hBsCA&ehbc=2E312F",
         },
         {
-            id: "2",
+            id: 2,
             name: "Arena di Verona",
             img: "place2",
             description: `The Arena is the Roman amphitheater in Verona. It was built in the first century AD to watch the fights of gladiators. It is the third Roman amphitheater for size among those still existing and is used in summer for opera, concerts and events. It is the monument that most represents the city.
@@ -189,7 +189,7 @@ export default async (models) => {
             map: "https://www.google.com/maps/d/u/1/embed?mid=1BByTM9yXoRlqhN8nobsOolSVOSzojZM&ehbc=2E312F",
         },
         {
-            id: "3",
+            id: 3,
             name: "Stadio San Siro",
             img: "place3",
             description: `Stadio Giuseppe Meazza, commonly known as San Siro, is a football stadium in the San Siro district of Milan, Italy, which is the home of A.C. Milan and Inter Milan. It has a seating capacity of 80,018, making it one of the largest stadiums in Europe, and the largest in Italy.
@@ -198,14 +198,14 @@ export default async (models) => {
             map: "https://www.google.com/maps/d/u/1/embed?mid=1KD1c9zc4o6JZcraZ4Uug_-ZjfTO7UVM&ehbc=2E312F",
         },
         {
-            id: "4",
+            id: 4,
             name: "Piazza Duomo",
             img: "place4",
             description: `Piazza del Duomo ("Cathedral Square") is the main piazza (city square) of Milan, Italy. It is named after, and dominated by, Milan Cathedral (the Duomo). The piazza marks the center of the city, both in a geographic sense and because of its importance from an artistic, cultural, and social point of view. Rectangular in shape, with an overall area of 17,000 m2 (about 183,000 sq ft), the piazza includes some of the most important buildings of Milan (and Italy in general), as well some of the most prestigious commercial activities, and it is by far the foremost tourist attraction of the city.`,
             map: "https://www.google.com/maps/d/u/1/embed?mid=1wsPBN6UJqeMoMP7l6ZIzwXTit8caKpw&ehbc=2E312F",
         },
         {
-            id: "5",
+            id: 5,
             name: "Parco Sempione",
             img: "place5",
             description: `Parco Sempione ("Simplon Park") is a large city park in Milan, Italy. Established in 1888, it has an overall area of 38.6 hectares (95 acres), and it is located in the historic center of the city, inside the Zone 1 administrative division.
@@ -218,14 +218,14 @@ export default async (models) => {
 
     const artistsList = [
         {
-            id: "1",
+            id: 1,
             name: "Blanco",
             img: "artist1",
             description: `Riccardo Fabbriconi (born 10 February 2003), known professionally as Blanco, is an Italian singer, rapper and songwriter.[1] He rose to fame following the success of his singles "Mi fai impazzire" and "La canzone nostra". In 2022, he won the Sanremo Music Festival 2022 alongside Mahmood with the song "Brividi", and represented host nation Italy at the Eurovision Song Contest 2022 in Turin.`,
             info: "https://www.instagram.com/blanchitobebe/",
         },
         {
-            id: "2",
+            id: 2,
             name: "Fabio Volo",
             img: "artist2",
             description: `Fabio Bonetti was born in Calcinate, Italy on 23 June 1972. After attending middle school, he worked in his father's bakery (which is now an ice-cream shop in Brescia) and did other casual jobs (like modeling and nightlife related). In 1996 he became a leading figure at Radio Capital, an Italian radio station. As from 1998, he anchored three edition of the TV program Le Iene
@@ -235,7 +235,7 @@ export default async (models) => {
             info: "https://www.instagram.com/volofabio/",
         },
         {
-            id: "3",
+            id: 3,
             name: "Marracash",
             img: "artist3",
             description: `Marracash, pseudonym of Fabio Bartolo Rizzo (Nicosia, 22 May 1979), is an Italian rapper.
@@ -245,7 +245,7 @@ export default async (models) => {
             info: "https://www.instagram.com/kingmarracash/",
         },
         {
-            id: "4",
+            id: 4,
             name: "Alessandro Cattelan",
             img: "artist4",
             description: `Alessandro Cattelan was born in Tortona on 11 May 1980.
@@ -255,7 +255,7 @@ export default async (models) => {
             info: "https://www.instagram.com/alecattelan/",
         },
         {
-            id: "5",
+            id: 5,
             name: "Ghali",
             img: "artist5",
             description: `Ghali Amdouni, known by the mononym Ghali (born 21 May 1993), is an Italian rapper and record producer. Born in Milan to Tunisian parents,[1] he originally started his career using the pseudonym Fobia. He would like to become a father but his mother doesn’t let him have a son.
@@ -334,7 +334,7 @@ export default async (models) => {
                 in the Temples Valley in Agrigento, at the Certosa of Capri, in the Boboli Gardens in Florence, at Torre del Lago Puccini 
                 and in Piazza San Marco in Venice.
             `,
-            info: "",
+            info: "https://www.instagram.com/robertobolle/",
         },
         {
             id: 10,
@@ -471,7 +471,7 @@ export default async (models) => {
         {
             id: 15,
             name: "Clementine Margaine",
-            img: "artist16",
+            img: "artist15",
             description: 
             `
                 Considered one of the leading mezzos of her generation, French mezzo-soprano Clémentine Margaine has gained international acclaim in 
@@ -496,113 +496,113 @@ export default async (models) => {
 
     const eventsArtistsList = [
         {
-            eventsId: 7,
-            artistsId: 1,
+            eventId: 7,
+            artistId: 1,
         },
         {
-            eventsId: 6,
-            artistsId: 1,
+            eventId: 6,
+            artistId: 1,
         },
         {
-            eventsId: 8,
-            artistsId: 2,
+            eventId: 8,
+            artistId: 2,
         },
         {
-            eventsId: 7,
-            artistsId: 3,
-        },
-                {
-            eventsId: 8,
-            artistsId: 3,
+            eventId: 7,
+            artistId: 3,
         },
         {
-            eventsId: 8,
-            artistsId: 4,
+            eventId: 8,
+            artistId: 3,
         },
         {
-            eventsId: 9,
-            artistsId: 5,
+            eventId: 8,
+            artistId: 4,
         },
         {
-            eventsId: 7,
-            artistsId: 5,
+            eventId: 9,
+            artistId: 5,
         },
         {
-            eventsId: 6,
-            artistsId: 6,
+            eventId: 7,
+            artistId: 5,
         },
         {
-            eventsId: 10,
-            artistsId: 7,
+            eventId: 6,
+            artistId: 6,
         },
         {
-            eventsId: 3,
-            artistsId: 8,
+            eventId: 10,
+            artistId: 7,
         },
         {
-            eventsId: 4,
-            artistsId: 9,
+            eventId: 3,
+            artistId: 8,
         },
         {
-            eventsId: 5,
-            artistsId: 9,
+            eventId: 4,
+            artistId: 9,
         },
         {
-            eventsId: 6,
-            artistsId: 10,
+            eventId: 5,
+            artistId: 9,
         },
         {
-            eventsId: 3,
-            artistsId: 10,
+            eventId: 6,
+            artistId: 10,
         },
         {
-            eventsId: 2,
-            artistsId: 11,
+            eventId: 3,
+            artistId: 10,
         },
         {
-            eventsId: 4,
-            artistsId: 11,
+            eventId: 2,
+            artistId: 11,
         },
         {
-            eventsId: 3,
-            artistsId: 12,
+            eventId: 4,
+            artistId: 11,
         },
         {
-            eventsId: 6,
-            artistsId: 12,
+            eventId: 3,
+            artistId: 12,
         },
         {
-            eventsId: 1,
-            artistsId: 13,
+            eventId: 6,
+            artistId: 12,
         },
         {
-            eventsId: 2,
-            artistsId: 13,
+            eventId: 1,
+            artistId: 13,
         },
         {
-            eventsId: 5,
-            artistsId: 13,
+            eventId: 2,
+            artistId: 13,
         },
         {
-            eventsId: 1,
-            artistsId: 14,
+            eventId: 5,
+            artistId: 13,
         },
         {
-            eventsId: 4,
-            artistsId: 14,
+            eventId: 1,
+            artistId: 14,
         },
         {
-            eventsId: 5,
-            artistsId: 14,
+            eventId: 4,
+            artistId: 14,
         },
         {
-            eventsId: 1,
-            artistsId: 15,
+            eventId: 5,
+            artistId: 14,
         },
         {
-            eventsId: 5,
-            artistsId: 15,
+            eventId: 1,
+            artistId: 15,
+        },
+        {
+            eventId: 5,
+            artistId: 15,
         },
     ]
-    await models.EventsArtists.bulkCreate(eventsArtistsList)
+    await models.Events_Artists.bulkCreate(eventsArtistsList)
 }
