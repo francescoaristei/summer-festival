@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Card from '~/components/Card.vue'
+import Card from '~/components/CardEl.vue'
 export default {
   name: 'ListPage',
   components: {
