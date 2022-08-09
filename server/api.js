@@ -50,7 +50,8 @@ async function initializeDatabaseConnection() {
         img: DataTypes.STRING,
         description: DataTypes.TEXT,
         type: DataTypes.STRING,
-        pratical_info: DataTypes.STRING,
+        date: DataTypes.STRING,
+        ticket: DataTypes.STRING
     },{timestamps:false})
 
     const Artist = database.define("Artist",{

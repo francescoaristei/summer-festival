@@ -1,16 +1,16 @@
 <template>
-  <div class="col-lg-6">
-    <div class="caption">
-        <div class="caption-content">
-          <nuxt-link :to="`/details/${id}`">
-            <div class="h2">{{name}}</div>
-          </nuxt-link>
-            <p class="mb-0">{{date}}</p>
-            </div>
-        </div>
+  <div class="col-lg-6 py-5">
+    <nuxt-link :to="`/details/${id}`">
     <img class="img-fluid" :src="getImgUrl(img)"  :alt="img" />
+    </nuxt-link>
+    <div class="caption-content">
+        <h2>{{name}}</h2>
+        <p class="lead mb-0">{{date}}</p>
+    </div>
   </div>
 </template>
+
+
 
 
 <script>
@@ -41,3 +41,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.img-fluid{
+  border-radius: 10px;
+}
+
+.caption-content{
+  text-align: center;
+}
+
+
+</style>

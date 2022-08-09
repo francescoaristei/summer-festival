@@ -147,7 +147,7 @@ export default async (models) => {
         },
         {
             id: 10,
-            name: "Concerto per Milano, Filarmonica della Scala",
+            name: "Filarmonica della Scala",
             img: "event10",
             description: 
             `
