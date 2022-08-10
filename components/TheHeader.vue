@@ -49,7 +49,7 @@ export default {
         },
         {
           name: 'PLACES',
-          path: '/',
+          path: '/places',
         },
         {
           name: 'CONTACT US',
