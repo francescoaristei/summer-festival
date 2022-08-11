@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { Sequelize, DataTypes } = require("sequelize")
+const { Sequelize, Op, DataTypes } = require("sequelize")
 const initialize = require('./initialize').default
 app.use(express.json())
 
@@ -51,7 +51,8 @@ async function initializeDatabaseConnection() {
         description: DataTypes.TEXT,
         type: DataTypes.STRING,
         date: DataTypes.STRING,
-        ticket: DataTypes.STRING
+        ticket: DataTypes.STRING,
+        placeId: DataTypes.INTEGER
     },{timestamps:false})
 
     const Artist = database.define("Artist",{
@@ -253,56 +254,21 @@ async function runMainApi() {
 
     app.get('/place_of_event/:EventId', async (req, res) => {
         const event = +req.query.EventId
-        const place = await models.Event.findAll({attributes: ['PlaceId'], where: { id: event} })
-        const filtered_place = []
-        for(const element of place){
-            filtered_place.push({
-                id: element.placeId,
-            })
-        }
-        const place_list = []
-
-        for (const data of filtered_place) {
-            place_list.push(data.id)
-        }
-        //console.log(artists_list)
-
-        const filtered = []
-
-        const result = await models.Place.findAll({ where: { id: place_list } })
-        for(const element of result){
-            filtered.push({
-                id: element.id,
-                name: element.name,
-                img: element.img,
-            })
-        }
-        //console.log(filtered)
-        return res.json(filtered)
+        const place = await models.Event.findOne({where: { id: event} })
+        console.log(place)
+        const filtered_place = place.placeId
+        console.log(filtered_place)
+        const result = await models.Place.findOne({ where: { id: filtered_place } })
+        return res.json(result)
     })
 
 
     app.get('/events_of_event/:EventId', async (req, res) => {
         const event = +req.query.EventId
-        const place = await models.Event.findAll({attributes: ['PlaceId'], where: { id: event} })
-
-        const filtered_place = []
-        for(const element of place){
-            filtered_place.push({
-                id: element.placeId,
-            })
-        }
-        const place_list = []
-
-        for (const data of filtered_place) {
-            place_list.push(data.id)
-        }
-        //console.log(artists_list)
-
+        const place = await models.Event.findOne({where: { id: event} })
+        const filtered_place = place.placeId
+        const result = await models.Event.findAll({ where: { id: {[Op.ne]: event}, placeId: filtered_place }})
         const filtered = []
-
-
-        const result = await models.Event.findAll({ where: { PlaceId: place_list }})
         for(const element of result){
             filtered.push({
                 id: element.id,
@@ -330,7 +296,6 @@ async function runMainApi() {
 
 
 
-    // HTTP GET api that returns all the cats in our actual database
     app.get("/places", async (req, res) => {
         const result = await models.Place.findAll()
         const filtered = []
