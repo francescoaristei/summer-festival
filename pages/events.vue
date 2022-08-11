@@ -28,6 +28,7 @@
                     :date="event.date"
                     :name="event.name"
                     :img="event.img"
+                    :typeOfCard="`events`"
                 />
                 <div class="col mb-5">
                 </div>
