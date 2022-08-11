@@ -180,7 +180,7 @@ async function runMainApi() {
         return res.json(result)
     })
 
-    app.get('/Artist/:id', async (req, res) => {
+    app.get('/artist/:id', async (req, res) => {
         const id = +req.params.id
         const result = await models.Artist.findOne({ where: { id } })
         return res.json(result)
@@ -225,7 +225,7 @@ async function runMainApi() {
         const filtered_artists = []
         for(const element of artists){
             filtered_artists.push({
-                id: element.eventId,
+                id: element.artistId,
             })
         }
         const artists_list = []
@@ -233,7 +233,7 @@ async function runMainApi() {
         for (const data of filtered_artists) {
             artists_list.push(data.id)
         }
-        console.log(artists_list)
+        //console.log(artists_list)
 
         const filtered = []
 
@@ -247,13 +247,76 @@ async function runMainApi() {
                 info: element.info
             })
         }
+        //console.log(filtered)
+        return res.json(filtered)
+    })
+
+    app.get('/place_of_event/:EventId', async (req, res) => {
+        const event = +req.query.EventId
+        const place = await models.Event.findAll({attributes: ['PlaceId'], where: { id: event} })
+        const filtered_place = []
+        for(const element of place){
+            filtered_place.push({
+                id: element.placeId,
+            })
+        }
+        const place_list = []
+
+        for (const data of filtered_place) {
+            place_list.push(data.id)
+        }
+        //console.log(artists_list)
+
+        const filtered = []
+
+        const result = await models.Place.findAll({ where: { id: place_list } })
+        for(const element of result){
+            filtered.push({
+                id: element.id,
+                name: element.name,
+                img: element.img,
+            })
+        }
+        //console.log(filtered)
+        return res.json(filtered)
+    })
+
+
+    app.get('/events_of_event/:EventId', async (req, res) => {
+        const event = +req.query.EventId
+        const place = await models.Event.findAll({attributes: ['PlaceId'], where: { id: event} })
+
+        const filtered_place = []
+        for(const element of place){
+            filtered_place.push({
+                id: element.placeId,
+            })
+        }
+        const place_list = []
+
+        for (const data of filtered_place) {
+            place_list.push(data.id)
+        }
+        //console.log(artists_list)
+
+        const filtered = []
+
+
+        const result = await models.Event.findAll({ where: { PlaceId: place_list }})
+        for(const element of result){
+            filtered.push({
+                id: element.id,
+                name: element.name,
+                img: element.img,
+            })
+        }
         console.log(filtered)
         return res.json(filtered)
     })
 
     app.get('/events_place/:PlaceId', async(req, res) =>{
         const place = req.query.PlaceId
-        const result = await models.Place.findAll({where: { PlaceId: place} })
+        const result = await models.Place.findAll({where: { id: place} })
         const filtered = []
         for(const element of result){
             filtered.push({
@@ -263,6 +326,8 @@ async function runMainApi() {
         }
         return res.json(filtered)
     })
+
+
 
 
     // HTTP GET api that returns all the cats in our actual database

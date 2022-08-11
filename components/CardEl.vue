@@ -1,17 +1,14 @@
 <template>
   <div class="col-lg-6 py-5">
-    <nuxt-link :to="`/details/${id}`">
-    <img class="img-fluid" :src="getImgUrl(img)"  :alt="img" />
+    <nuxt-link :to="`/details/events/${id}`">
+    <img class="img-fluid" :src="getImgUrl(img, typeOfCard)"  :alt="img" />
     </nuxt-link>
     <div class="caption-content">
         <h2>{{name}}</h2>
-        <p class="lead mb-0">{{date}}</p>
+        <p class="lead mb-0">{{name}}</p>
     </div>
   </div>
 </template>
-
-
-
 
 <script>
 export default {
@@ -29,14 +26,14 @@ export default {
       type: String,
       required: true,
     },
-    date:{
+    typeOfCard:{
       type: String,
-      required: true,
+      required: true
     }
   },
   methods: {
-    getImgUrl(img) {
-      return require(`../assets/events/` + img + `.jpg`)
+    getImgUrl(img, typeOfCard) {
+      return require(`../assets/` + typeOfCard + `/` + img + `.jpg`)
     }
   }
 }
