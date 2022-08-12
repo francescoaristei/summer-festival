@@ -152,9 +152,9 @@ const pageContentObject = {
         introduction: ""
     },
     allArtists:{
-        title:"ALL ITINERARIES",
-        img: "../assets/itineraries/all_itineraries.jpg",
-        introduction:""
+        title:"ARTISTS",
+        img: "../assets/all/allArtists.jpg",
+        introduction:"The festival will feature a variety of artists from around the area, a mix of local and international talent. There is something for everyone, from rock to pop to hip-hop to classical. There will be musicians, singers, actors, and other types of artists performing during whole summer. Here you will find a complete list and hopefully your favourite artists as well. Check them out and don’t miss their events!"
     }
 }
 
@@ -181,7 +181,7 @@ async function runMainApi() {
         return res.json(result)
     })
 
-    app.get('/artist/:id', async (req, res) => {
+    app.get('/artists/:id', async (req, res) => {
         const id = +req.params.id
         const result = await models.Artist.findOne({ where: { id } })
         return res.json(result)
@@ -193,7 +193,7 @@ async function runMainApi() {
         const filtered_events = []
         for(const element of events){
             filtered_events.push({
-                id: element.artistId,
+                id: element.eventId,
             })
         }
         const events_list = []
@@ -212,7 +212,10 @@ async function runMainApi() {
                 name: element.name,
                 img: element.img,
                 description: element.description,
-                type: element.type
+                type: element.type,
+                date: element.date,
+                ticket: element.ticket,
+                placeId: element.placeId,
             })
         }
         console.log(filtered)
@@ -301,6 +304,7 @@ async function runMainApi() {
         filtered.push({
           name: element.name,
           img:element.img,
+          id:element.id,
         })
       }
       return res.json(filtered)
@@ -341,15 +345,15 @@ async function runMainApi() {
     })
 
     app.get("/artists", async (req, res) => {
-        const result = await models.Itinerary.findAll()
+        const result = await models.Artist.findAll()
         const filtered = []
         for (const element of result) {
             filtered.push({
                 id: element.id,
                 name: element.name,
+                img: element.img,
                 description: element.description,
                 info: element.info,
-                img: element.img,
             })
         }
         return res.json(filtered)

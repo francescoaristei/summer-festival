@@ -1,4 +1,3 @@
-
 <template>
   <section class="content-section">
     <meta charset="utf-8" />
@@ -13,19 +12,19 @@
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." /></div>
             <div class="col-lg-5">
-                <p class="place-description">{{data.description}}</p>
+                <p class="artist-description">{{data.description}}</p>
             </div>
         </div>
-        <div class="gmap_canvas" align="center">
-          <h4>WHERE YOU CAN FIND IT</h4>
-          <iframe :src=data.map frameborder="0" style="border:0">
-          </iframe>
-        </div>
+  <!--
+      <a class="social-icon" href = "data:info"  target="_blank">
+      <img src="static/logo-instagram.svg" alt="aaa">
+      </a>
+-->
     </div>
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
        <div class="row gx-4 gx-lg-5 align-items-center my-5">
-         <h4 style="margin-top: 4vw">EVENTS TAKING PLACE HERE</h4>
+         <h4 style="margin-top: 4vw">Do you like {{data.name}}? Check this events:</h4>
           <div class="row gx-4 gx-lg-5">
             <card-el v-for="(event, eventIndex) of events" class="col-lg-6 py-5" :key="`card-el-index-${eventIndex}`"
             :name="event.name" :img="event.img"  :id="event.id" :typeOfCard="`events` " />
@@ -51,8 +50,8 @@ export default {
     try{
       const { id } = route.params;
       const  [ data , events]  = await Promise.all([
-        $axios.get('/api/places/' + id, { params: { PlaceId: id}}),
-        $axios.get('/api/events_of_place/' + id, {params: {PlaceId: id}}),
+        $axios.get('/api/artists/' + id, { params: { ArtistId: id}}),
+        $axios.get('/api/events_of_artist/' + id, {params: {ArtistId: id}}),
     ])
     return {
       data: data.data,
@@ -64,7 +63,7 @@ export default {
   },
   methods: {
     getImgUrl(img) {
-      return require(`../../../assets/places/` + img + `.jpg`)
+      return require(`../../../assets/artists/` + img + `.jpg`)
     },
   },
 }
@@ -91,8 +90,15 @@ iframe{
 .bottom-list{
   background: #FFAD42;
 }
-.place-description{
+.artist-description{
   text-align: justify;
   text-align-last: center;
+}
+.social-icon{
+  color: #aaaaaa;
+  size: 100px;
+}
+.social-icon:hover{
+  color: #333333;
 }
 </style>

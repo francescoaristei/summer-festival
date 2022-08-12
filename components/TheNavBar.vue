@@ -45,7 +45,7 @@ export default {
         },
         {
           name: 'ARTISTS',
-          path: '/',
+          path: '/artists',
         },
         {
           name: 'PLACES',
