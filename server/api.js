@@ -293,6 +293,18 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
+    app.get('/events_of_place/:PlaceId', async(req,res)=>{
+      const place = req.query.PlaceId
+      const result = await models.Event.findAll({where:{ placeId: place} })
+      const filtered= []
+      for(const element of result){
+        filtered.push({
+          name: element.name,
+          img:element.img,
+        })
+      }
+      return res.json(filtered)
+    })
 
 
 

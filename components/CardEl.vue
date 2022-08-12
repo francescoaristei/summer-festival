@@ -1,6 +1,6 @@
 <template>
   <div class="col-lg-6 py-5">
-    <nuxt-link :to="`/details/events/${id}`">
+    <nuxt-link :to="`/details/` + typeOfCard + `/${id}`">
     <img class="img-fluid" :src="getImgUrl(img, typeOfCard)"  :alt="img" />
     </nuxt-link>
     <div class="caption-content">
