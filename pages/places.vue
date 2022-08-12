@@ -71,7 +71,8 @@ h4{
 .site-description{
   font-style: normal;
   font-size: 1.7vw;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
 }
 .masthead{
   text-align: center;
