@@ -6,7 +6,7 @@
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../places">Artists</a></li>
+              <li class="breadcrumb-item"><a href="../../artists">Artists</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
             </ol>
         </nav>
@@ -23,10 +23,13 @@
         </div>
     </div>
     <div class="artist-info">
-      <p class="info"> {{data.name}} Social Media: </p>
+      <p class="info"> {{data.name}} Social Media:
       <a class="social-icon" href = data.info  target="_blank" >
-        <img src='../../../static/logo-instagram.svg' alt="aaa" width="30vw">
+        <img src='../../../static/logo-instagram.svg' alt="logo" width="30vw">
       </a>
+      <a class="social-icon" href = data.info  target="_blank" >
+        <img src='../../../static/logo-facebook.svg' alt="logo" width="30vw">
+      </a></p>
     </div>
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
@@ -104,6 +107,7 @@ iframe{
 .artist-info{
   white-space: nowrap;
   display: inline-block;
+  text-align: center;
 }
 .info{
   text-align: left;

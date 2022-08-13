@@ -136,12 +136,12 @@ const pageContentObject = {
     },
     contactUs:{
         title: "CONTACT US",
-        phone: 'PHONE: +39 333 333 3333',
-        email: 'EMAIL: aiateam@mail.it',
-        whenOpen:"We are open every week day 9:30 - 12:00, 15:00 - 18:00",
-        address: "Piazza Leonardo da Vinci, 32, 20133 Milano MI",
-        map: "https://www.google.com/maps/d/u/1/embed?mid=1rThwlxeZznE2nn-ZOFixr3rV0bVzHZE&ehbc=2E312F"
-    },
+        description: "For any information do not hesitate to contact us, either by e-mail or through our info-line, at the times indicated we will be more than available for any clarification or information that may be useful regarding the festival.\n" +
+          "The contacts you can refer to are listed below",
+        phone: '+39 333 333 3333',
+        email: 'aiateam@mail.it',
+        whenOpen:"9:30 - 12:00, 15:00 - 18:00",
+        },
     allPlaces:{
         title:"PLACES",
         img:"../assets/all/allPlaces.jpg",
