@@ -4,6 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../places">Artists</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
+            </ol>
+        </nav>
       <div class="site-heading">
           <h1>{{data.name}}</h1>
         </div>

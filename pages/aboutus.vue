@@ -8,7 +8,6 @@
           <div class="site-heading">
             <h1>{{data.title}}</h1>
           </div>
-        </div>
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
             <p class="fest-description">{{data.description}}</p>
          <div class="row gx-4 gx-lg-5 align-items-center my-5">
@@ -19,6 +18,7 @@
           <div class="row gx-4 gx-lg-5 align-items-center my-5">
             <h4 class="site-heading">E-MAIL</h4>
             <p class="description"> <b>Email:</b> {{data.email}}</p>
+        </div>
         </div>
         </div>
         </div>

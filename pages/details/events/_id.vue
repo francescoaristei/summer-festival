@@ -3,6 +3,12 @@
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../places">Events</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
+            </ol>
+          </nav>
             <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." /></div>
             <div class="col-lg-5">
                 <p>{{data.description}}</p>
