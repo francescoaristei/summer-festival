@@ -57,7 +57,7 @@ export default {
         },
         {
           name: 'ABOUT US',
-          path: '/about',
+          path: '/aboutus',
         },
       ],
     }

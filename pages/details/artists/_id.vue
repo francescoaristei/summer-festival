@@ -15,11 +15,12 @@
                 <p class="artist-description">{{data.description}}</p>
             </div>
         </div>
-  <!--
-      <a class="social-icon" href = "data:info"  target="_blank">
-      <img src="static/logo-instagram.svg" alt="aaa">
+    </div>
+    <div class="artist-info">
+      <p class="info"> {{data.name}} Social Media: </p>
+      <a class="social-icon" href = data.info  target="_blank" >
+        <img src='../../../static/logo-instagram.svg' alt="aaa" width="30vw">
       </a>
--->
     </div>
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
@@ -94,11 +95,19 @@ iframe{
   text-align: justify;
   text-align-last: center;
 }
+.artist-info{
+  white-space: nowrap;
+  display: inline-block;
+}
+.info{
+  text-align: left;
+}
 .social-icon{
-  color: #aaaaaa;
+  color: black;
   size: 100px;
+  display: inline-block;
 }
 .social-icon:hover{
-  color: #333333;
+  color: #FFAD42;
 }
 </style>

@@ -129,9 +129,10 @@ const pageContentObject = {
             afternoon every day and last until the break of dawn. If you feel like catching a small break in-between gigs, you can choose from the widest scale of activities Milan has to offer,
             watching art site, getting artsy, doing sports offline or online or just chilling around the city.
         `,
-        when: "During the months of August and September",
-        where:"Milan and Verona",
-        map: ""
+        when: "The festival takes place on multiple dates starting from June until September.\n" +
+          "Each event, in fact, takes place not only in different locations but also on multiple dates.",
+        where:"The festival offers multiple events in different places, mainly located in Milan with the exception of the beautiful Verona arena",
+        map: "https://www.google.com/maps/d/u/1/embed?mid=1rThwlxeZznE2nn-ZOFixr3rV0bVzHZE&ehbc=2E312F"
     },
     contactUs:{
         title: "CONTACT US",
