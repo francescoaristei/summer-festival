@@ -53,7 +53,7 @@ export default {
         },
         {
           name: 'CONTACT US',
-          path: '/',
+          path: '/contactus',
         },
         {
           name: 'ABOUT US',

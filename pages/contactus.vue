@@ -10,16 +10,21 @@
           </div>
         </div>
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <p class="fest-description">{{data.description}}</p>
+            <h4 class="site-heading">FESTIVAL DESCRIPTION:</h4>
+            <p class="fest-description">{{data.festival_description}}</p>
          <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <h4 class="site-heading">PHONE</h4>
-            <p class="description"> <b>Number:</b> {{data.phone}}<br>
-              <b>OpeningHours:</b> {{data.whenOpen}}</p>
-         </div>
-          <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <h4 class="site-heading">E-MAIL</h4>
-            <p class="description"> <b>Email:</b> {{data.email}}</p>
+            <h4 class="site-heading">WHEN:</h4>
+            <p class="fest-description">{{data.when}}</p>
         </div>
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+          <h4 class="site-heading"> WHERE</h4>
+            <div class="where">
+            <p class="description">{{data.where}}</p>
+                <iframe :src=data.map frameborder="0" style="border:0"></iframe>
+            </div>
+          </div>
+
         </div>
         </div>
     </section>
@@ -29,11 +34,11 @@
 <script>
 
 export default {
-  name: 'ContactUs',
+  name: 'AboutUs',
 
   async asyncData({ $axios }) {
     try{
-        const { data } = await $axios.get('api/page-info/contactUs')
+        const { data } = await $axios.get('api/page-info/aboutUs')
         return {
             data: data,
         }
@@ -63,8 +68,6 @@ iframe{
   height: 30vw;
 }
 .description{
-  margin-top: 1vw;
-  text-align: left;
-  float: left;
+  text-align: center;
 }
 </style>
