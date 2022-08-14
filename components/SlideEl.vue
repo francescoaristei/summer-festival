@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-6 py-5">
+  <div class="carousel-item">
     <nuxt-link :to="`/details/` + typeOfCard + `/${id}`">
     <img class="img-fluid" :src="getImgUrl(img, typeOfCard)"  :alt="img" />
     </nuxt-link>
@@ -29,7 +29,7 @@ export default {
     typeOfCard:{
       type: String,
       required: true
-    },
+    }
   },
   methods: {
     getImgUrl(img, typeOfCard) {
@@ -44,7 +44,6 @@ export default {
 
 .img-fluid{
   border-radius: 10px;
-
 }
 
 .caption-content{
