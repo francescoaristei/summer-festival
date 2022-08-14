@@ -10,38 +10,59 @@
               <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
             </ol>
         </nav>
-      <div class="site-heading">
-          <h1>{{data.name}}</h1>
+        <div class="site-heading">
+            <h1>{{data.name}}</h1>
         </div>
       </div>
         <!-- Heading Row-->
-        <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." /></div>
-            <div class="col-lg-5">
-                <p class="artist-description">{{data.description}}</p>
-            </div>
-        </div>
+        <div class="row gx-4 gx-lg-5 my-5">
+          <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." />
+              <div class="artist-info">
+                <p class="info"> FOLLOW ON  :
+                <a class="social-icon" :href = "data.info"  target="_blank" >
+                  <img src='../../../static/logo-instagram.svg' alt="logo" width="30vw">
+                </a>
+                <a class="social-icon" :href = "data.info"  target="_blank" >
+                  <img src='../../../static/logo-facebook.svg' alt="logo" width="30vw">
+                </a></p>
+              </div>
+          </div>
+          <div class="col-lg-5">
+              <p class="artist-description" style="font-style:italic; font-size:large; white-space: pre-line;">{{data.description}}</p>
+          </div>
+        </div>    
+        
     </div>
-    <div class="artist-info">
-      <p class="info"> {{data.name}} Social Media:
-      <a class="social-icon" href = data.info  target="_blank" >
-        <img src='../../../static/logo-instagram.svg' alt="logo" width="30vw">
-      </a>
-      <a class="social-icon" href = data.info  target="_blank" >
-        <img src='../../../static/logo-facebook.svg' alt="logo" width="30vw">
-      </a></p>
-    </div>
+
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
-       <div class="row gx-4 gx-lg-5 align-items-center my-5">
-         <h4 style="margin-top: 4vw">Do you like {{data.name}}? Check this events:</h4>
-          <div class="row gx-4 gx-lg-5">
-            <card-el v-for="(event, eventIndex) of events" class="col-lg-6 py-5" :key="`card-el-index-${eventIndex}`"
-            :name="event.name" :img="event.img"  :id="event.id" :typeOfCard="`events` " />
+          <div id="carouselEvents" class="carousel slide" data-bs-ride="carousel">
+            
+          <!-- Content Row-->
+          <div class="carousel-inner">
+            <!-- Content Row-->
+        <!--<div class="row gx-4 gx-lg-5 align-items-center my-5">-->
+          <h4 style="margin-top: 2vw">Do you like {{data.name}}? Check out these events:</h4>
+              <card-el v-for="(event, eventIndex) of events" :class="{ active: eventIndex==0 }" :key="`card-el-index-${eventIndex}`"
+              :name="event.name" :img="event.img"  :id="event.id" :typeOfCard="`events` " :typeOfEl="`carousel-item`" />
+            </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvents" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEvents" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselEvents" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
-         </div></div>
+        </div>
+      </div>
     </div>
-    </section>
+  </section>
 </template>
 
 
@@ -54,8 +75,8 @@ export default {
 
   components: {
     CardEl,
-    'card-el': CardEl
-  },
+    "card-el": CardEl,
+},
   async asyncData({ route, $axios }) {
     try{
       const { id } = route.params;
@@ -81,20 +102,22 @@ export default {
 </script>
 
 <style scoped>
+.carousel-inner{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-indicators{
+  position:relative;
+  filter: invert(100%);
+}
+
 p{
-  text-align: center;
-}
-iframe{
-  width: 100vw;
-  height: 30vw;
-}
-.gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  text-align: left;
-  margin-bottom: 4vw;
-}
-.site-heading{
   text-align: center;
 }
 .bottom-list{
@@ -108,6 +131,7 @@ iframe{
   white-space: nowrap;
   display: inline-block;
   text-align: center;
+  margin-top: 1vw;
 }
 .info{
   text-align: left;

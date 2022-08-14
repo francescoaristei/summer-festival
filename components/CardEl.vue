@@ -1,11 +1,12 @@
 <template>
-  <div class="col-lg-6 py-5">
+  <!--<div class="col-lg-6 py-5">-->
+    <div :class="typeOfEl">
     <nuxt-link :to="`/details/` + typeOfCard + `/${id}`">
     <img class="img-fluid" :src="getImgUrl(img, typeOfCard)"  :alt="img" />
     </nuxt-link>
     <div class="caption-content">
         <h2>{{name}}</h2>
-        <p class="lead mb-0">{{name}}</p>
+        <!--<p class="lead mb-0">{{name}}</p>-->
     </div>
   </div>
 </template>
@@ -30,6 +31,10 @@ export default {
       type: String,
       required: true
     },
+    typeOfEl:{
+      type: String,
+      required: true
+    }
   },
   methods: {
     getImgUrl(img, typeOfCard) {

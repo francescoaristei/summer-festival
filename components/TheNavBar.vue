@@ -36,7 +36,7 @@ export default {
     return {
       headerList: [
         {
-          name: 'Home',
+          name: 'HOME',
           path: '/',
         },
         {
@@ -77,5 +77,6 @@ export default {
 .nav-item{
   float: right;
 }
+
 </style>
 

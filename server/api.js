@@ -111,22 +111,22 @@ const pageContentObject = {
         img2: "all_poi",
         img3: "front_page",
         img4: "Marathon",
-        description1:"MILAN IS A FANTASTIC CITY TO EXPLORE. WITH ALL ITS HISTORY AND MODERN CULTURE. EVERYONE COULD FIND SOMETHING INTERESTING TO DO",
+        description1:"MILAN IS A FANTASTIC CITY TO EXPLORE. WITH ALL ITS HISTORY AND MODERN CULTURE.EVERYONE COULD FIND SOMETHING INTERESTING TO DO",
         description2: "FROM SPORTS TO MUSEUM, YOU JUST HAVE TO PICK WHICH EVENT SUITS YOU NEEDS. YOU REALLY HAVE PLENTY OF CHOOSE",
         description3: "EVEN IF YOU'RE NOT INTO EVENTS. MILAN HAS SO MUCH MORE TO OFFER. DISCOVER SOME OF THE BEAUTIFUL PLACES HERE IN MILAN",
         description4: "OR START A JOURNEY FOLLOWING ONE OF THE ITINERARY WE HAVE PREPARED FOR YOU",
     },
     aboutUs: {
-        title: "Milan Arts Experience",
+        title: "AIA Music Festival",
         festival_description:
         `
             Milan Arts Experience welcomes hundreds of thousands of people each summer and aims to bring the biggest names in the art industry
-            from the widest variety of genres. Milan Arts Experience, however, is not only about the artistic experiences,
-            but a whole lot more: It's about love, art and freedom in all possible forms! It's a cultural festival offering visitors
-            the summer of a lifetime full of concerts, art programs, performances and much more. Is a place for for you to truly be yourself!
-            Life at the festival just never stops. Each day, the greatest of bands and artists come on and walk off stage in the most spectacular scenes of Milan and Verona:
-            The Arena di Verona, the Teatro alla Scala, the Parco Sempione or the Stadio San Siro and so on. Concerts and artistic performances go on from early
-            afternoon every day and last until the break of dawn. If you feel like catching a small break in-between gigs, you can choose from the widest scale of activities Milan has to offer,
+            from the widest variety of genres.\nMilan Arts Experience, however, is not only about the artistic experiences,
+            but a whole lot more: It's about love, art and freedom in all possible forms!\nIt's a cultural festival offering visitors
+            the summer of a lifetime full of concerts, art programs, performances and much more.\nIs a place for for you to truly be yourself!
+            Life at the festival just never stops.\nEach day, the greatest of bands and artists come on and walk off stage in the most spectacular scenes of Milan and Verona:\n
+            The Arena di Verona, the Teatro alla Scala, the Parco Sempione or the Stadio San Siro and so on.\nConcerts and artistic performances go on from early
+            afternoon every day and last until the break of dawn.\nIf you feel like catching a small break in-between gigs, you can choose from the widest scale of activities Milan has to offer,
             watching art site, getting artsy, doing sports offline or online or just chilling around the city.
         `,
         when: "The festival takes place on multiple dates starting from June until September.\n" +
@@ -136,8 +136,7 @@ const pageContentObject = {
     },
     contactUs:{
         title: "CONTACT US",
-        description: "For any information do not hesitate to contact us, either by e-mail or through our info-line, at the times indicated we will be more than available for any clarification or information that may be useful regarding the festival.\n" +
-          "The contacts you can refer to are listed below",
+        description: "For any information do not hesitate to contact us, either by e-mail or through our info-line, at the times indicated we will be more than available for any clarification or information that may be useful regarding the festival.\nThe contacts you can refer to are listed below",
         phone: '+39 333 333 3333',
         email: 'aiateam@mail.it',
         whenOpen:"9:30 - 12:00, 15:00 - 18:00",
@@ -145,17 +144,17 @@ const pageContentObject = {
     allPlaces:{
         title:"PLACES",
         img:"../assets/all/allPlaces.jpg",
-        introduction:"The festival will take place in several historical and cultural places scattered around the city to make you experience art at its fullest. In this page you will find all the places in which the events will occur during the festival. Clicking on the event you will be displayed more info about the place and a list of the events that it will host. Start your festival journey and experience here and discover them all!"
+        introduction:"The festival will take place in several historical and cultural places scattered around the city to make you experience art at its fullest.\nIn this page you will find all the places in which the events will occur during the festival.\nClicking on the event you will be displayed more info about the place and a list of the events that it will host.\nStart your festival journey and experience here and discover them all!"
     },
     allEvents:{
-        title:"ALL SERVICES",
+        title:"ALL EVENTS",
         img: "../assets/serviceTypes/all_services.jpg",
-        introduction: ""
+        introduction: "The festival will be composed of a variety of events, ranging from Music concert to Ballet show and Opera representation.\nThe festival tries appositely to fullfil the immense artistic spectrum todays artists can offer us, trying to attract the most different and diverse audience."
     },
     allArtists:{
         title:"ARTISTS",
         img: "../assets/all/allArtists.jpg",
-        introduction:"The festival will feature a variety of artists from around the area, a mix of local and international talent. There is something for everyone, from rock to pop to hip-hop to classical. There will be musicians, singers, actors, and other types of artists performing during whole summer. Here you will find a complete list and hopefully your favourite artists as well. Check them out and don’t miss their events!"
+        introduction:"The festival will feature a variety of artists from around the area, a mix of local and international talent.\nThere is something for everyone, from rock to pop to hip-hop to classical.\nThere will be musicians, singers, actors, and other types of artists performing during whole summer.\nHere you will find a complete list and hopefully your favourite artists as well.\nCheck them out and don't miss their events!"
     }
 }
 

@@ -19,7 +19,7 @@
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
           <h4 class="site-heading"> WHERE</h4>
-            <div class="where">
+            <div class="where" style="align: center">
             <p class="description">{{data.where}}</p>
                 <iframe :src=data.map frameborder="0" style="border:0"></iframe>
             </div>
@@ -56,8 +56,11 @@ h4{
     display: inline-block;
 }
 .fest-description{
+  font-style:normal;
+  font-size: large;
   text-align: justify;
   text-align-last: center;
+  white-space: pre-line;
 }
 .site-heading{
   text-align: center;
@@ -66,6 +69,13 @@ h4{
 iframe{
   width: 80vw;
   height: 30vw;
+}
+
+.where{
+  overflow:hidden;
+  background:none!important;
+  text-align: left;
+  margin-bottom: 4vw;
 }
 .description{
   text-align: center;

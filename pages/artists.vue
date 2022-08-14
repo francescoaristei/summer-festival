@@ -27,6 +27,7 @@
                     :name="artist.name"
                     :img="artist.img"
                     :typeOfCard="`artists`"
+                    :typeOfEl="`col-lg-6 py-5`"
                 />
                 <div class="col mb-5">
                 </div>
@@ -70,9 +71,10 @@ h4{
 }
 .site-description{
   font-style: normal;
-  font-size: 1.7vw;
+  font-size: xx-large;
   text-align: justify;
   text-align-last: center;
+  white-space: pre-line;
 }
 .masthead{
   text-align: center;

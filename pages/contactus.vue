@@ -51,8 +51,11 @@ h4{
     display: inline-block;
 }
 .fest-description{
+  font-size: large;
+  font-style: normal;
   text-align: justify;
   text-align-last: center;
+  white-space: pre-line;
 }
 .site-heading{
   text-align: center;
