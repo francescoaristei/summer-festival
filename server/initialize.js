@@ -501,6 +501,115 @@ export default async (models) => {
             `,
             info: "https://www.instagram.com/clementinemargaine/",
         },
+        {
+            id: 16,
+            name: "Giovanni Allevi",
+            img: "artist16",
+            description:
+            `Giovanni Allevi (Italian pronunciation: (born April 9, 1969) is an Italian pianist and composer.\n
+            His song "O Generosa" is the current theme tune of the top flight of Italian football, Serie
+            Allevi attained a first-class diploma both in piano at the "F. Morlacchi" conservatoire in Perugia and in composition at the Milan Conservatory.\n
+            He graduated cum laude in philosophy with a thesis entitled "Il vuoto nella Fisica contemporanea" (The Void in Contemporary Physics) and 
+            he attended the Accademia Internazionale di Alto Perfezionamento in Arezzo, under maestro Carlo Alberto Neri.\n
+            In 1991, he did military service in the Italian Army Music Band. The master of the band noticed his piano talent and decided to put 
+            the piano soloist in his "inventory." He played the Rhapsody in Blue by George Gershwin and the Warsaw Concerto by Richard Addinsell in 
+            his capacity as the piano soloist of the Banda during a tour in numerous Italian theatres.
+             `,
+            info: "https://www.instagram.com/giovanniallevi/"
+        },
+        {
+            id: 17,
+            name: "Ludovico Einaudi",
+            img: "artist17",
+            description:
+            `Ludovico Maria Enrico Einaudi (born 23 November 1955) is an Italian pianist and composer. \n
+            Trained at the Conservatorio Verdi in Milan, 
+            Einaudi began his career as a classical composer, later incorporating other styles and genres such as pop, rock, folk, and world music.\n
+            Einaudi has composed the scores for a number of films and television productions, including This Is England, The Intouchables, 
+            I'm Still Here, the TV miniseries Doctor Zhivago, and Acquario (1996), for which he won the Grolla d'oro. \n
+            His music was used as the score for the Golden Globe and Academy Award-winning films Nomadland and The Father.\n
+            He has also released a number of solo albums for piano and other instruments, notably I Giorni in 2001, Nightbook in 2009, and 
+            In a Time Lapse in 2013. On 1 March 2019, Einaudi announced a seven-part project named Seven Days Walking, which was released over 
+            the course of seven months in 2019. 
+            `,
+            info: "https://www.instagram.com/ludovico_einaudi/"
+
+        },
+        {
+            id: 18,
+            name: "Kanye West",
+            img: "artist18",
+            description:
+            `Ye (born Kanye Omari West; June 8, 1977), commonly known as Kanye West, is an American rapper, record producer, 
+            and fashion designer.\n He is widely regarded as one of the greatest and most influential hip hop musicians of all time, as well as 
+            one of the greatest musicians of his generation.\n Born in Atlanta and raised in Chicago, West gained recognition as a producer for 
+            Roc-A-Fella Records in the early 2000s, producing singles for several artists and developing the "chipmunk soul" sampling style. \n
+            Intent on pursuing a solo career as a rapper, he released his debut studio album, The College Dropout (2004), to critical and commercial success.
+             West subsequently founded his record label GOOD Music later that same year. 
+            `,
+            info: "https://www.instagram.com/kanyewest/"
+
+        },
+        {
+            id: 19,
+            name: "Jabbawockeez",
+            img: "artist19",
+            description:
+            `The Jabbawockeez is an American hip-hop dance crew that rose to prominence as the winner of the first season of America's Best Dance Crew in 2008.\n
+            Established in 2003 in San Diego, California when dancers Kevin "KB" Brewer and Joe Larot put together an innovative dance crew. \n
+            They participated in dance competitions with the idea of disrupting the existing dance scene. \n
+            At the time they felt that dance crews were clones of one another; were dancing to the "top" of the music instead of digging deep into the music, 
+            and they set out to do something different. With Jabbawockeez, they showcased freestyle dance, were able to strike a balance between dancing to the music, 
+            and dancing as an artistic expression.\n
+            By 2004, the Jabbawockeez's members included Phil "Swagger Boy" Tayag, Ben "B-Tek" Chung, Chris "Cristyle" Gatdula, Rynan "Kid Rainen" Paguio, 
+            and Jeff "Phi" Nguyen.\n Tony "Transformer" Tran joined the crew in 2013. The Jabbawockeez does not have a group leader; choreography for their performances, 
+            as well as music, design choices, is made as a collective unit.
+            `,
+            info: "https://www.instagram.com/jabbawockeez/"
+
+        },
+        {
+            id: 20,
+            name: "Ezio Bosso",
+            img: "artist20",
+            description:
+            `Ezio Bosso 13 September 1971 is an Italian composer, pianist, double bass player, and conductor. \n
+            He composed film scores such as Un amore and Gabriele Salvatores' Io non ho paura, and ballets which were performed by 
+            The Royal Ballet and the San Francisco Ballet, among others. As a pianist, he released a solo album which entered the Italian charts.
+            `,
+            info: "https://www.instagram.com/eziobosso/"
+            
+        },
+        {
+            id: 21,
+            name: "Eminem",
+            img: "artist21",
+            description:
+            `Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem (stylized as EMINƎM), 
+            is an American rapper, songwriter and record producer. \n
+            He is credited with popularizing hip hop in middle America and is critically acclaimed as one of the greatest rappers of all time.\n
+            Eminem's global success and acclaimed works are widely regarded as having broken racial barriers for the acceptance of white rappers in popular music.\n
+            While much of his transgressive work during the late 1990s and early 2000s made him widely controversial, 
+            he came to be a representation of popular angst of the American underclass and has been cited as an influence for many artists of various genres. 
+            `,
+            info: "https://www.instagram.com/eminem/"
+        },
+        {
+            id: 22,
+            name: "Imagine Dragons",
+            img: "artist22",
+            description:
+            `Imagine Dragons is an American pop rock band from Las Vegas, Nevada, consisting of lead singer Dan Reynolds, guitarist Wayne Sermon, 
+            bassist Ben McKee and drummer Daniel Platzman.\nThe band first gained exposure with the release of their single "It's Time", 
+            followed by their award-winning debut studio album Night Visions (2012), which resulted in the chart-topping singles "Radioactive" and "Demons".\n 
+            Rolling Stone named "Radioactive", which held the record for most weeks charted on the Billboard Hot 100, the "biggest rock hit of the year".\n
+            MTV called them "the year's biggest breakout band", and Billboard named them their "Breakthrough Band of 2013" and "Biggest Band of 2017",
+            and placed them at the top of their "Year in Rock" rankings for 2013, 2017,and 2018.    N
+            Imagine Dragons topped the Billboard Year-End "Top Artists Duo/Group" category in 2018.
+            `,
+            info: "https://www.instagram.com/imaginedragons/"
+
+        }
     ]
     await models.Artist.bulkCreate(artistsList)
 
@@ -564,7 +673,7 @@ export default async (models) => {
         },
         {
             eventId: 12,
-            artistId: 4
+            artistId: 5
         },
         {
             eventId: 3,
@@ -616,7 +725,7 @@ export default async (models) => {
         },
         {
             eventId: 5,
-            artistId: 13,
+            artistId: 17,
         },
         {
             eventId: 1,
@@ -627,8 +736,8 @@ export default async (models) => {
             artistId: 14,
         },
         {
-            eventId: 5,
-            artistId: 14,
+            eventId: 9,
+            artistId: 16,
         },
         {
             eventId: 1,
@@ -640,28 +749,52 @@ export default async (models) => {
         },
         {
             eventId: 13,
-            artistId: 15
+            artistId: 16,
 
         },
         {
             eventId: 13,
-            artistId: 12,
+            artistId: 19,
         },
         {
             eventId: 14,
-            artistsId: 11,
+            artistsId: 17,
         },
         {
             eventId: 14,
-            artistId: 10
+            artistId: 18,
         },
         {
             eventId: 15,
-            artistId: 9
+            artistId: 18,
         },
         {
             eventId: 15,
-            artistId: 8
+            artistId: 19,
+        },
+        {
+            eventId: 11,
+            artistId: 20,
+        },
+        {
+            eventId: 10,
+            artistId: 20
+        },
+        {
+            eventId: 12,
+            artistId: 21
+        },
+        {
+            eventId: 2,
+            artistId: 21
+        },
+        {
+            eventId: 13,
+            artistId: 22,
+        },
+        {
+            eventId: 14,
+            artistId: 22
         }
 
     ]
