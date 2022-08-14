@@ -164,6 +164,91 @@ export default async (models) => {
             ticket: "FILL",
             placeId: 1
         },
+
+        {
+            id: 11,
+            name: "Coachella",
+            img: "event11",
+            description:
+                        `Coachella showcases popular and established musical artists as well as emerging artists and reunited groups. \n
+                        It is one of the largest, most famous, and most profitable music festivals in the United States and the world. \nAlthough Coachella's roots are all about music, it's become way more expansive than that in recent years. \n
+                        It features art installations and has also become a major fashion hotspot for bohemian-inspired styles. \nIt's also packed with celebrities, 
+                        from the artists who are performing to stars who just want to hang out. \nA-listers like Kendall Jenner, Jared Leto, Leonardo DiCaprio, 
+                        and more are spotted there almost every year.
+            `,
+            type: "Music",
+            date: "13-09-2022",
+            ticket: "FILL",
+            placeId: 3,
+        },
+
+        {
+            id: 12,
+            name: "BST",
+            img: "event12",
+            description:
+                    `BST is a music festival held over one entire day once a year, during AIA music festival in Parco Sempione, Milan.\n
+                    Since 2013, BST Parco Sempione has seen headliners such as Celine Dion, The Rolling Stones, Bon Jovi, Barbra Streisand, 
+                    Lionel Richie, Kylie Minogue, Black Sabbath, Neil Young, Pearl Jam, Tom Petty & The Heartbreakers, Arcade Fire, The Who, 
+                    Blur, The Strokes,Taylor Swift and Adele.\n In 2022 the capacity was 65,000.
+            `,
+            type: "Music",
+            date: "06-09-2022",
+            ticket: "FILL",
+            placeId: 5
+        },
+        {
+            id: 13,
+            name: "Vienna Opera in Concert",
+            img: "event13",
+            description:
+            `The Vienna Mozart Orchestra plays in Teatro alla Scala concerts with internationally renowned singers and soloists all in magnificent historical costumes and wigs and creates a special atmosphere 
+            in Milan's largest and most famous Concert hall, like Teatro alla Scala.\n
+            Principally, the choice of works gives an impression of an authentic concert of the baroque era.\n
+            In the style of “musical academies”, as in Milan concerts were known in Mozart's time, 
+            the audience enjoy single movements from symphonies and solo concertos, as well as operatic overtures, 
+            arias and duets from especially popular and well-known works.
+            `,
+            type: "Opera",
+            date: "28-08-2022",
+            ticket: "FILL",
+            placeId: 1
+
+        },
+        {
+            id: 14,
+            name: "Duomo dance show",
+            img: "event14",
+            description:
+            `Duomo Dance Shoq, an international dance event currently in its 10th edition!\n
+            It's an annual event of reference for students, teachers, professional dancers and dance enthusiasts held during AIA Summer Festival.\n
+            Conceived as an intercultural show to improve the technique and style of the different dance expressions: modern, 
+            contemporary and hip hop, it is honored by the presence of world-renowned choreographers.\n
+            The program includes dance classes in different educational levels: intermediate, advanced and professional. \n
+            Choreographic workshops led by choreographers of the most important and famous international companies. \n
+            The general program includes: meetings, exhibitions, competitions, video productions and shows.`,
+            type: "Dance",
+            date: "12-08-2022",
+            ticket: "FILL",
+            placeId: 4
+        },
+        {
+            id: 15,
+            name: "Rolling Loud",
+            img: "event15",
+            description:
+            `Rolling Loud is the largest hip hop event in the world, 
+            annually putting together a lineup of the biggest and most influential acts in the genre only at AIA Music Festival!\n
+            The festival's flagship edition lives in Milan, but Rolling Loud has expanded across the country and beyond, 
+            spreading their take on the contemporary rap scene global.
+            `,
+            type: "Music",
+            date: "11-08-2022",
+            ticket: "FILL",
+            placeId: 5
+
+        }
+
     ]
     await models.Event.bulkCreate(eventsList)
 
@@ -450,6 +535,10 @@ export default async (models) => {
             artistId: 5,
         },
         {
+            eventId: 9,
+            artistId: 2
+        },
+        {
             eventId: 7,
             artistId: 5,
         },
@@ -458,14 +547,34 @@ export default async (models) => {
             artistId: 6,
         },
         {
+            eventId: 11,
+            artistId: 6
+        },
+        {
             eventId: 10,
             artistId: 7,
+        },
+        {
+            eventId: 11,
+            artistId: 7
+        },
+        {
+            eventId: 10,
+            artistId: 4
+        },
+        {
+            eventId: 12,
+            artistId: 4
         },
         {
             eventId: 3,
             artistId: 8,
         },
         {
+            eventId: 12,
+            artistId: 8
+        },
+        {
             eventId: 4,
             artistId: 9,
         },
@@ -529,6 +638,32 @@ export default async (models) => {
             eventId: 5,
             artistId: 15,
         },
+        {
+            eventId: 13,
+            artistId: 15
+
+        },
+        {
+            eventId: 13,
+            artistId: 12,
+        },
+        {
+            eventId: 14,
+            artistsId: 11,
+        },
+        {
+            eventId: 14,
+            artistId: 10
+        },
+        {
+            eventId: 15,
+            artistId: 9
+        },
+        {
+            eventId: 15,
+            artistId: 8
+        }
+
     ]
     await models.Events_Artists.bulkCreate(eventsArtistsList)
 }

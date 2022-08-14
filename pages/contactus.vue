@@ -15,10 +15,14 @@
               <p class="description" style="text-align: center"> <b>Number:</b> {{data.phone}}<br>
                 <b>OpeningHours:</b> {{data.whenOpen}}</p>
           </div>
-            <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
+          <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
               <h4 class="site-heading">E-MAIL</h4>
               <p class="description" style="text-align:center"> <b>Email:</b> {{data.email}}</p>
           </div>
+          
+        </div>
+        <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
+              <h4 class="description" style="text-align:center"> You can also try to reach us through this online form:</h4>
         </div>
       </div>
     </div>
@@ -78,12 +82,11 @@
               </form>
 
               <div class="text-center text-md-left">
-                  <a class="btn btn-primary">Send</a>
+                  <a class="btn btn-warning btn-rounded" v-on:click="validateForm();">Send</a>
               </div>
               <div class="status"></div>
           </div>
           <!--Grid column-->
-
       </div>
   </section>
 </template>
@@ -104,6 +107,43 @@ export default {
         console.log(error);
     }
   },
+
+  methods: {
+    validateForm: function() {
+      const name =  document.getElementById('name').value;
+      if (name === "") {
+          document.querySelector('.status').innerHTML = "Name cannot be empty";
+          return false;
+      }
+      const email =  document.getElementById('email').value;
+      if (email === "") {
+          document.querySelector('.status').innerHTML = "Email cannot be empty";
+          return false;
+      }
+      const subject =  document.getElementById('subject').value;
+      if (subject === "") {
+          document.querySelector('.status').innerHTML = "Subject cannot be empty";
+          return false;
+      }
+      const message =  document.getElementById('message').value;
+      if (message === "") {
+          document.querySelector('.status').innerHTML = "Message cannot be empty";
+          return false;
+      }
+      const emptyname = document.getElementById('name');
+      emptyname.value = "";
+
+      const emptyemail = document.getElementById('email');
+      emptyemail.value = "";
+
+      const emptysubject = document.getElementById('subject');
+      emptysubject.value = "";
+
+      const emptymessage = document.getElementById('message');
+      emptymessage.value = "";
+      document.querySelector('.status').innerHTML = "SENT";
+    }
+  }
 }
 </script>
 
