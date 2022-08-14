@@ -23,6 +23,8 @@
             </div>
         </div>
     </div>
+
+    
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
         <div id="carouselArtists" class="carousel slide" data-bs-ride="carousel">

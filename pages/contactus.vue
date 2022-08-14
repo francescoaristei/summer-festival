@@ -1,28 +1,91 @@
 <template>
-    <section class="content-section">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-         <!-- Page Header-->
-        <div class="container px-4 px-lg-5">
+  <section class="content-section">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Page Header-->
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
+        <div class="site-heading">
+          <h1>{{data.title}}</h1>
+        </div>
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-          <div class="site-heading">
-            <h1>{{data.title}}</h1>
+              <p class="fest-description">{{data.description}}</p>
+          <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
+              <h4 class="site-heading">PHONE</h4>
+              <p class="description" style="text-align: center"> <b>Number:</b> {{data.phone}}<br>
+                <b>OpeningHours:</b> {{data.whenOpen}}</p>
           </div>
-        <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <p class="fest-description">{{data.description}}</p>
-         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <h4 class="site-heading">PHONE</h4>
-            <p class="description"> <b>Number:</b> {{data.phone}}<br>
-              <b>OpeningHours:</b> {{data.whenOpen}}</p>
-         </div>
-          <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <h4 class="site-heading">E-MAIL</h4>
-            <p class="description"> <b>Email:</b> {{data.email}}</p>
+            <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
+              <h4 class="site-heading">E-MAIL</h4>
+              <p class="description" style="text-align:center"> <b>Email:</b> {{data.email}}</p>
+          </div>
         </div>
-        </div>
-        </div>
-        </div>
-    </section>
+      </div>
+    </div>
+      <div class="row" style="margin: 0 auto;">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5" style="margin: 0 auto;">
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                  <!--Grid row-->
+                  <div class="row">
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" id="name" name="name" class="form-control">
+                              <label for="name" class="">Your name</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" id="email" name="email" class="form-control">
+                              <label for="email" class="">Your email</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <input type="text" id="subject" name="subject" class="form-control">
+                              <label for="subject" class="">Subject</label>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                      <!--Grid column-->
+                      <div class="col-md-12">
+
+                          <div class="md-form">
+                              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                              <label for="message">Your message</label>
+                          </div>
+
+                      </div>
+                  </div>
+                  <!--Grid row-->
+
+              </form>
+
+              <div class="text-center text-md-left">
+                  <a class="btn btn-primary">Send</a>
+              </div>
+              <div class="status"></div>
+          </div>
+          <!--Grid column-->
+
+      </div>
+  </section>
 </template>
 
 
