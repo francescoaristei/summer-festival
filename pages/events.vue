@@ -19,12 +19,14 @@
             <div>{{info.introduction}}</div>
           </div>
         </div>
+        <div class="container content-center px-5 px-lg-5 py-5">
+              <button class="btn btn-lg active" type="button" v-on:click="filterEvents('All')">All</button>
+              <button class="btn btn-lg active" type="button" v-on:click="filterEvents('Music')">Music</button>
+              <button class="btn btn-lg active" type="button" v-on:click="filterEvents('Dance')">Dance</button>
+              <button class="btn btn-lg active" type="button" v-on:click="filterEvents('Opera')">Opera</button>
+        </div>
         <div class="container px-4 px-lg-5">     
-            <h4>Categories: </h4>  
-            <button class="btn btn-warning btn-rounded" type="button" v-on:click="filterEvents('All')">All</button>
-            <button class="btn btn-warning btn-rounded" type="button" v-on:click="filterEvents('Music')">Music</button>
-            <button class="btn btn-warning btn-rounded" type="button" v-on:click="filterEvents('Dance')">Dance</button>
-            <button class="btn btn-warning btn-rounded" type="button" v-on:click="filterEvents('Opera')">Opera</button>
+            <!--<h4 style="text-align: center;">Categories: </h4> --> 
             <div class="row gx-5">
                 <card-el
                     v-for="(event, eventIndex) of filteredEvents"
@@ -95,6 +97,27 @@ export default {
 
 
 <style scoped>
+
+
+
+.btn.btn-lg.active {
+  text-align : center;
+  color : black;
+  background-color : #aaaaaa;
+  transition : 0.3s;
+  color : black;
+  text-align : center;
+  text-decoration : none;
+  border-radius: 25px;
+}
+
+.btn.btn-lg.active:hover {
+  transition : 0.3s;
+  box-shadow : 0px 0px 1px 8px #aaaaaa;
+  background-color : #828282;
+  cursor : pointer;
+}
+
 
 .masthead{
   text-align: center;

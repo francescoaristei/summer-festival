@@ -5,18 +5,17 @@ const initialize = require('./initialize').default
 app.use(express.json())
 
 // Development
-// const database = new Sequelize("postgres://michele:4BmhdKHgWmeJ@localhost:5432/summerfestival")
-//const database = new Sequelize("postgres://aiateam:aiateam@localhost:5432/summerfestival")
+const database = new Sequelize("postgres://aiateam:aiateam@localhost:5432/summerfestival")
 // Production
 
 
-
+/*
 const pg = require('pg')
 pg.defaults.ssl = true
  const database = new Sequelize(process.env.DATABASE_URL, {
    ssl: true,
    dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
- })
+ })*/
  
 
 // Function that will initialize the connection to the database

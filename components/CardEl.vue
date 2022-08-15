@@ -52,6 +52,10 @@ export default {
 
 }
 
+.img-fluid:hover {
+opacity: 0.5;
+}
+
 .caption-content{
   text-align: center;
 }

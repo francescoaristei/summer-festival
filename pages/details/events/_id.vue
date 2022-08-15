@@ -13,13 +13,15 @@
           <div class="site-heading">
               <h1 style="margin-bottom:2vw;">{{data.name}}</h1>
               <h3 style="margin-bottom: 2vw;">{{data.date}} </h3>
-              <h4>{{place.name}}</h4>
+              <nuxt-link :to="`/details/places` + `/${place.id}`" class="btn btn-lg active" id="place" >
+                {{ place.name }}
+                </nuxt-link>
           </div>
         </div>
-        <div class="row gx-4 gx-lg-5 my-5">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." /></div>
+        <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
+            <div class="col-lg-7" style="margin-bottom: 10vw;" ><img class="img-fluid rounded mb-4 mb-lg-0"  :src=getImgUrl(data.img) alt="..." /></div>
             <div class="col-lg-5">
-                <p class="event-description" style="font-style:italic; font-size: large; white-space: pre-line;">{{data.description}}</p>
+                <p class="event-description" style="font-style:italic; font-size: x-large; white-space: pre-line;">{{data.description}}</p>
             </div>
         </div>
     </div>
@@ -158,6 +160,24 @@ p{
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
+}
+
+#place {
+  text-align : center;
+  color : black;
+  background-color : #aaaaaa;
+  transition : 0.3s;
+  color : black;
+  text-align : center;
+  text-decoration : none;
+  border-radius: 25px;
+}
+
+#place:hover {
+  transition : 0.3s;
+  box-shadow : 0px 0px 1px 8px #aaaaaa;
+  background-color : #828282;
+  cursor : pointer;
 }
 
 </style>

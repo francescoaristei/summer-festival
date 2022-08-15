@@ -44,7 +44,8 @@ export default async (models) => {
             description: 
                 `Tuesady 30th of June from 18:00 LOVE MI is live, a huge charity concert held in Piazza Duomo in Milan.\n
                 The live event has been thinked and organized by Fedez, in order to collect the moneys needed to build the new TOG centre.\n
-                This event is an extraordinary initiative for the city of Milan, for its people and especially for the children of the TOG centre.`,
+                This event is an extraordinary initiative for the city of Milan, for its people and especially for the children of the TOG centre.\n
+                The evening event will be presented by Eleonoire Casalegno and Aurora Ramazzotti, with Gabriele Vagnato, a young and very popular content creator.`,
             type: "Music",
             date: "30-08-2022",
             ticket: "FILL",
@@ -88,7 +89,8 @@ export default async (models) => {
                 `The summer in Milano rhymes with Milano Summer!, fantastic concerts, the majority of which have been cancelled due to the Covid crysis.\n
                 Instead, now, the music comes back live to the Duomo square for a huge concert. \n
                 From Alice Cooper, to The Killers, Luois Tomlison and the Chemical Brothers.\n Also italian artists will be main players in this event:
-                from Achille Lauro to Blanco, numerous artists will join the Milano Summer Festival to let you enjoy to its full the city of Milan`,
+                from Achille Lauro to Blanco, numerous artists will join the Milano Summer Festival to let you enjoy to its full the city of Milan.\n
+                Don't miss out this fantastic opportunities to have fun together with your friends!`,
             type: "Music",
             date: "07-09-2022 to 09-09-2022",
             ticket: "FILL",
@@ -138,6 +140,7 @@ export default async (models) => {
                 After announcing the only date for Liberato, the Milan event will host the international DJ and producer on Saturday 10 September 2022, 
                 during its second day. \n Martin Garrix, the reference artist of the urban Ghali scene, while DJ Justin Mylo and the trio of producers 
                 Room9 will be responsible for opening the big party at the Snai San Siro Hippodrome in Milan.\n
+                If you like partying you must join us to enjoy the best rock and electronic music the European scene has to offer!
             `,
             type: "Music",
             date: "10-09-2022",

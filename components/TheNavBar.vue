@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light px-3 header">
+  <nav class="navbar navbar-expand-lg navbar-light px-3 py-3 header fixed-top">
     <a class="navbar-brand" href="/">AIA Music Festival</a>
     <button
       class="navbar-toggler"
@@ -13,14 +13,15 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbarToggler" class="collapse navbar-collapse" >
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li
+    <div id="navbarToggler" class="collapse navbar-collapse"  >
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+        <li 
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
           class="nav-item"
+          
         >
-          <nuxt-link :to="navItem.path" class="nav-link">
+        <nuxt-link :to="navItem.path" class="nav-link" >
             {{ navItem.name }}
           </nuxt-link>
         </li>
@@ -62,12 +63,21 @@ export default {
       ],
     }
   },
+
+  mounted: function(){
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarToggler')
+    const bsCollapse = new window.bootstrap.Collapse(menuToggle)
+    navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
+  }
 }
 </script>
 
 <style scoped>
 .header {
-  background: white;
+  background: lightblue;
 }
 .logo {
   color: white;

@@ -82,7 +82,7 @@
               </form>
 
               <div class="text-center text-md-left">
-                  <a class="btn btn-warning btn-rounded" v-on:click="validateForm();">Send</a>
+                  <a class="btn btn-lg active" v-on:click="validateForm();">Send</a>
               </div>
               <div class="status"></div>
           </div>
@@ -172,5 +172,23 @@ iframe{
   margin-top: 1vw;
   text-align: left;
   float: left;
+}
+
+.btn.btn-lg.active {
+  text-align : center;
+  color : black;
+  background-color : #aaaaaa;
+  transition : 0.3s;
+  color : black;
+  text-align : center;
+  text-decoration : none;
+  border-radius: 25px;
+}
+
+.btn.btn-lg.active:hover {
+  transition : 0.3s;
+  box-shadow : 0px 0px 1px 8px #aaaaaa;
+  background-color : #828282;
+  cursor : pointer;
 }
 </style>
