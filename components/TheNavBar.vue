@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light px-3 py-3 header fixed-top">
-    <a class="navbar-brand" href="/">AIA Music Festival</a>
+  <nav class="navbar navbar-expand-lg navbar-light px-3 py-1 header fixed-top">
+    <a class="navbar-brand" href="/">Milan Arts Experience</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -77,7 +77,7 @@ export default {
 
 <style scoped>
 .header {
-  background: lightblue;
+  background: orange;
 }
 .logo {
   color: white;

@@ -9,13 +9,13 @@ app.use(express.json())
 // Production
 
 
-
 const pg = require('pg')
 pg.defaults.ssl = true
  const database = new Sequelize(process.env.DATABASE_URL, {
    ssl: true,
    dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
  })
+ 
  
 
 // Function that will initialize the connection to the database
@@ -105,17 +105,13 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Homepage",
-        img1: "all_itineraries",
-        img2: "all_poi",
-        img3: "front_page",
-        img4: "Marathon",
-        description1:"MILAN IS A FANTASTIC CITY TO EXPLORE. WITH ALL ITS HISTORY AND MODERN CULTURE.EVERYONE COULD FIND SOMETHING INTERESTING TO DO",
+        description1:"THE MILAN ARTS EXPERIENCE IS A SENSATIONAL FESTIVAL YOU MUST JOIN! PEOPLE ALL OVER THE WORLD COME TO ENJOY THE BEST ARTS THE WORLD HAS TO OFFER!",
         description2: "FROM SPORTS TO MUSEUM, YOU JUST HAVE TO PICK WHICH EVENT SUITS YOU NEEDS. YOU REALLY HAVE PLENTY OF CHOOSE",
         description3: "EVEN IF YOU'RE NOT INTO EVENTS. MILAN HAS SO MUCH MORE TO OFFER. DISCOVER SOME OF THE BEAUTIFUL PLACES HERE IN MILAN",
         description4: "OR START A JOURNEY FOLLOWING ONE OF THE ITINERARY WE HAVE PREPARED FOR YOU",
     },
     aboutUs: {
-        title: "AIA Music Festival",
+        title: "Milan Arts Experience",
         festival_description:
         `
             Milan Arts Experience welcomes hundreds of thousands of people each summer and aims to bring the biggest names in the art industry
