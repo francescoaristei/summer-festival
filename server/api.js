@@ -16,6 +16,7 @@ pg.defaults.ssl = true
    dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
  })
  
+
  
 
 // Function that will initialize the connection to the database

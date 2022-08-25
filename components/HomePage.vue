@@ -5,7 +5,7 @@
              <div id="festival" class="bg-image shadow-2-strong">
                 <div class="desc1" > 
                     <p class="font-weight-bold">
-                        THE MILAN ARTS EXPERIENCE IS A SENSATIONAL FESTIVAL YOU MUST JOIN! PEOPLE ALL OVER THE WORLD COME TO SEE THE BEST ARTS THE WORLD HAS TO OFFER!
+                        THE MILAN ARTS EXPERIENCE IS A SENSATIONAL FESTIVAL YOU MUST JOIN! SCROLL DOWN TO DISCOVER WHAT IT HAS TO OFFER!
                     </p>
                 </div>
             </div>
@@ -14,7 +14,10 @@
                     <p class="font-weight-bold">
                         THE EVENTS OFFERED BELONG TO ALL THE DIFFERENT ARTS, FROM MUSIC CONCERT, TO OPERA SHOWS, BALLET CLASSES AND SO ON...
                     </p>
-                    <br > <u id="link">Find out more about the events!</u> 
+
+                    <nuxt-link to="/events" class="text-white me-4">
+                        <br ><u id="link">Find out more about the events!</u> 
+                    </nuxt-link>
                 </div>
             </div>
             <div id="places" class="bg-image shadow-2-strong">
@@ -22,7 +25,9 @@
                     <p class="font-weight-bold">
                         THE EVENTS ARE HELD IN THE MOST SUGGESTIVE AND FASCINATING LOCATIONS MILAN AND VERONA HAVE TO OFFER!
                     </p>
-                    <br> <u id="link">Find out more about the places!</u> 
+                    <nuxt-link to="/places" class="text-white me-4">
+                        <br> <u id="link">Find out more about the places!</u> 
+                    </nuxt-link>
                 </div>
             </div>
             <div id="artists" class="bg-image shadow-2-strong">
@@ -30,7 +35,9 @@
                     <p class="font-weight-bold">
                         THE LIST OF ARTISTS IS ALMOST INFINITE! THE ORGANIZERS WORKED VARY HARD TO REACH THE MOST CREATIVE PEOPLE IN THE WORLD!
                     </p>
-                    <br> <u id="link">Find out more about the artists!</u> 
+                    <nuxt-link to="/artists" class="text-white me-4">
+                        <br> <u id="link">Find out more about the artists!</u>
+                    </nuxt-link>
                 </div>
             </div>
         <!--</header>-->
@@ -79,6 +86,7 @@
         height: 80vh;
       }
 
+
     .desc1{
         width: 30%;
         height: 30%;
@@ -109,7 +117,7 @@
     }
     .desc3{
         width: 30%;
-        height: 30%;
+        height: 35%;
         position: absolute;
         top: 50%;
         left: 75%;
@@ -123,7 +131,7 @@
     }
     .desc4{
         width: 30%;
-        height: 30%;
+        height: 35%;
         position: absolute;
         top: 50%;
         left: 25%;
@@ -143,8 +151,13 @@
         font-size: 1.7vw;
     }
 
-    #link{
+    .text-white.me-4{
         text-align: center;
+        margin: auto 0;
+    }
+
+    #link{
+        /*text-align: center;*/
         margin: auto 0;
         text-justify: auto;
 

@@ -100,8 +100,7 @@ export default async (models) => {
             id: 7,
             name: "Radio Italia Live",
             img: "event7",
-            description: `
-                On the occasion of the 40th birthday of Radio Italia solomusicaitaliana, the largest free live music event in Italy returns to Piazza Duomo in 
+            description: `On the occasion of the 40th birthday of Radio Italia solomusicaitaliana, the largest free live music event in Italy returns to Piazza Duomo in 
                 Milan on Saturday 21 August 2022, starting at 20:10, with the conduct of Luca Bizzarri and Paolo Kessisoglu.\n
                 All the artists of the cast will sing three songs live with the accompaniment of the Mediterranean Orchestra conducted by Maestro Bruno Santori, 
                 returning to tread the stage of a great event after two years of stop due to the health emergency and giving the public the opportunity to 
@@ -715,7 +714,7 @@ export default async (models) => {
             artistId: 12,
         },
         {
-            eventId: 6,
+            eventId: 15,
             artistId: 12,
         },
         {
