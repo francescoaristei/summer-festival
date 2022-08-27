@@ -1,6 +1,6 @@
 <template>
     <!-- Page Content-->
-  <section class="content-section">
+  <section class="content-section" style="margin-top: 5vw">
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
@@ -181,6 +181,10 @@ p{
   box-shadow : 0px 0px 1px 8px #aaaaaa;
   background-color : #828282;
   cursor : pointer;
+}
+
+.breadcrumb-item{
+
 }
 
 </style>
