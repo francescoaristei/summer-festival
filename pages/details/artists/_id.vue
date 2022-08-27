@@ -28,16 +28,16 @@
               </div>
           </div>
           <div class="col-lg-5">
-              <p class="artist-description" style="font-style:italic; font-size:x-large; white-space: pre-line;">{{data.description}}</p>
+              <p class="artist-description">{{data.description}}</p>
           </div>
-        </div>    
-        
+        </div>
+
     </div>
 
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
           <div id="carouselEvents" class="carousel slide" data-bs-ride="carousel">
-            
+
           <!-- Content Row-->
           <div class="carousel-inner">
             <!-- Content Row-->
@@ -126,6 +126,9 @@ p{
 .artist-description{
   text-align: justify;
   text-align-last: center;
+  font-style:italic;
+  font-size: large;
+  white-space: pre-line;
 }
 .artist-info{
   white-space: nowrap;

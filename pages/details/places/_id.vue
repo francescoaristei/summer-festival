@@ -19,7 +19,7 @@
       <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
           <div class="col-lg-7" style="margin-bottom: 10vw;"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." /></div>
           <div class="col-lg-5">
-              <p class="place-description" style="font-style:italic; font-size: x-large; white-space: pre-line;">{{data.description}}</p>
+              <p class="place-description">{{data.description}}</p>
           </div>
       </div>
       <div class="gmap_canvas" align="center">
@@ -31,7 +31,7 @@
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
         <div id="carouselEvents" class="carousel slide" data-bs-ride="carousel">
-          
+
           <!-- Content Row-->
           <div class="carousel-inner">
             <h4 style="margin-top: 2vw; margin-bottom: 1vw; text-align:center">EVENTS TAKING PLACE HERE</h4>
@@ -130,6 +130,8 @@ iframe{
 .place-description{
   text-align: justify;
   text-align-last: center;
-  
+  font-style:italic;
+  font-size: large;
+  white-space: pre-line;
 }
 </style>

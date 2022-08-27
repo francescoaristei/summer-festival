@@ -71,7 +71,7 @@ h4{
 }
 .site-description{
   font-style: normal;
-  font-size: xx-large;
+  font-size: x-large;
   text-align: justify;
   text-align-last: center;
   white-space: pre-line;

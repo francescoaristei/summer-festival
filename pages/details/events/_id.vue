@@ -21,12 +21,12 @@
         <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
             <div class="col-lg-7" style="margin-bottom: 10vw;" ><img class="img-fluid rounded mb-4 mb-lg-0"  :src=getImgUrl(data.img) alt="..." /></div>
             <div class="col-lg-5">
-                <p class="event-description" style="font-style:italic; font-size: x-large; white-space: pre-line;">{{data.description}}</p>
+                <p class="event-description">{{data.description}}</p>
             </div>
         </div>
     </div>
 
-    
+
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
         <div id="carouselArtists" class="carousel slide" data-bs-ride="carousel">
@@ -43,7 +43,7 @@
           <button class="carousel-control-next" type="button" data-bs-target="#carouselArtists" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>          
+          </button>
           <div class="carousel-indicators" id="artists-indicators">
             <button type="button" data-bs-target="#carouselArtists" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselArtists" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -155,6 +155,9 @@ p{
 .event-description{
   text-align: justify;
   text-align-last: center;
+  font-style:italic;
+  font-size: large;
+  white-space: pre-line;
 }
 
 .carousel-control-next,
