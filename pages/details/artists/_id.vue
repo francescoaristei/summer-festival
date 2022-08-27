@@ -6,7 +6,7 @@
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../../artists">Artists</a></li>
+              <li class="breadcrumb-item"><a class="b-name" href="../../artists">Artists</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
             </ol>
         </nav>
@@ -145,6 +145,9 @@ p{
   display: inline-block;
 }
 .social-icon:hover{
+  color: #FFAD42;
+}
+.b-name{
   color: #FFAD42;
 }
 </style>

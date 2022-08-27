@@ -6,7 +6,7 @@
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../../events">Events</a></li>
+              <li class="breadcrumb-item"><a class="b-name" href="../../events">Events</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
             </ol>
           </nav>
@@ -183,8 +183,7 @@ p{
   cursor : pointer;
 }
 
-.breadcrumb-item{
-
+.b-name{
+  color: #FFAD42;
 }
-
 </style>
