@@ -20,25 +20,13 @@
             <div>{{info.introduction}}</div>
           </div>
         </div>
-
-        <!--<div class="container position-center px-4 px-lg-5 py-5" role="toolbar" aria-label="Toolbar with button groups">-->
           <div class="btn-toolbar" role="toolbar"  style="justify-content: center; width: 100%;">
-            <div class="btn-group mr-2" role="group" aria-label="First group">
               <button class="btn btn-lg active" type="button" v-on:click="filterEvents('All')">All</button>
-            </div>
-            <div class="btn-group mr-2" role="group" aria-label="Second group">
               <button class="btn btn-lg active" type="button" v-on:click="filterEvents('Music')">Music</button>
-            </div>
-            <div class="btn-group mr-2" role="group" aria-label="Third group">
               <button class="btn btn-lg active" type="button" v-on:click="filterEvents('Dance')">Dance</button>
-            </div>
-            <div class="btn-group mr-2" role="group" aria-label="Forth group">
               <button class="btn btn-lg active" type="button" v-on:click="filterEvents('Opera')">Opera</button>
-            </div>
           </div>
-        <!--</div>-->
         <div class="container px-4 px-lg-5">
-            <!--<h4 style="text-align: center;">Categories: </h4> -->
             <div class="row gx-5">
                 <card-el
                     v-for="(event, eventIndex) of filteredEvents"
@@ -120,17 +108,11 @@ export default {
   background-color : #aaaaaa;
   transition : 0.3s;
   color : black;
-  text-align : center;
-  text-decoration : none;
+  text-decoration : none;    
+  display: inline-grid;
+  width: 20%;
+  margin-right: 2vw;
 }
-
-.btn-group.mr-2{
-    display: inline-grid;
-    /*grid-template-columns: 1fr 1fr;*/
-    width: 20%;
-    margin-right: 1vw;
-    grid-gap: 1vw;
-  }
 
 .btn.btn-lg.active:hover {
   transition : 0.3s;

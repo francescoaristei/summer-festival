@@ -222,7 +222,7 @@ export default async (models) => {
             name: "Duomo dance show",
             img: "event14",
             description:
-            `Duomo Dance Shoq, an international dance event currently in its 10th edition!\n
+            `Duomo Dance Show, an international dance event currently in its 10th edition!\n
             It's an annual event of reference for students, teachers, professional dancers and dance enthusiasts held during AIA Summer Festival.\n
             Conceived as an intercultural show to improve the technique and style of the different dance expressions: modern, 
             contemporary and hip hop, it is honored by the presence of world-renowned choreographers.\n
