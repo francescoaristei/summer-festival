@@ -15,11 +15,11 @@
 
     <div id="navbarToggler" class="collapse navbar-collapse"  >
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
-        <li 
+        <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
           class="nav-item"
-          
+
         >
         <nuxt-link :to="navItem.path" class="nav-link" >
             {{ navItem.name }}
@@ -36,10 +36,6 @@ export default {
   data() {
     return {
       headerList: [
-        {
-          name: 'HOME',
-          path: '/',
-        },
         {
           name: 'EVENTS',
           path: '/events',

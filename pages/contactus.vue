@@ -1,5 +1,5 @@
 <template>
-  <section class="content-section">
+  <section class="content-section" style="margin-top: 6vw">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Page Header-->
@@ -19,7 +19,7 @@
               <h4 class="site-heading">E-MAIL</h4>
               <p class="description" style="text-align:center"> <b>Email:</b> {{data.email}}</p>
           </div>
-          
+
         </div>
         <div class="row gx-4 gx-lg-5 align-items-center my-5" style="margin: 0 auto;">
               <h4 class="description" style="text-align:center"> You can also try to reach us through this online form:</h4>

@@ -37,8 +37,8 @@
             </div>
           </div>
         <!--</div>-->
-        <div class="container px-4 px-lg-5">     
-            <!--<h4 style="text-align: center;">Categories: </h4> --> 
+        <div class="container px-4 px-lg-5">
+            <!--<h4 style="text-align: center;">Categories: </h4> -->
             <div class="row gx-5">
                 <card-el
                     v-for="(event, eventIndex) of filteredEvents"
@@ -92,8 +92,8 @@ export default {
     }
   },
 
-  
-  
+
+
   computed:{
     filteredEvents: function(){
       return this.events.filter((event) =>{
@@ -152,7 +152,7 @@ export default {
 
 .site-description{
   font-style: normal;
-  font-size:xx-large;
+  font-size:x-large;
   /*to have it inline just comment out the next two line */
   text-align: justify;
   text-align-last: center;

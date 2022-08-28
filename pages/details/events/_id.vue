@@ -1,12 +1,12 @@
 <template>
     <!-- Page Content-->
-  <section class="content-section">
+  <section class="content-section" style="margin-top: 5vw">
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../../events">Events</a></li>
+              <li class="breadcrumb-item"><a class="b-name" href="../../events">Events</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
             </ol>
           </nav>
@@ -28,12 +28,12 @@
             <div class="col-lg-7" style="margin-bottom: 10vw;" ><img class="img-fluid rounded mb-4 mb-lg-0"  :src=getImgUrl(data.img) :alt="img" /></div>
             
             <div class="col-lg-5">
-                <p class="event-description" style="font-style:italic; font-size: x-large; white-space: pre-line;">{{data.description}}</p>
+                <p class="event-description">{{data.description}}</p>
             </div>
         </div>
     </div>
 
-    
+
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
         <div id="carouselArtists" class="carousel slide" data-bs-ride="carousel">
@@ -50,7 +50,7 @@
           <button class="carousel-control-next" type="button" data-bs-target="#carouselArtists" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>          
+          </button>
           <div class="carousel-indicators" id="artists-indicators">
             <button type="button" data-bs-target="#carouselArtists" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselArtists" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -162,6 +162,9 @@ p{
 .event-description{
   text-align: justify;
   text-align-last: center;
+  font-style:italic;
+  font-size: large;
+  white-space: pre-line;
 }
 
 .carousel-control-next,
@@ -189,5 +192,8 @@ p{
 }
 
 
+.b-name{
+  color: #FFAD42;
+}
 
 </style>

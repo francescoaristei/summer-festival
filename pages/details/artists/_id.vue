@@ -1,12 +1,12 @@
 <template>
-  <section class="content-section">
+  <section class="content-section" style="margin-top: 5vw">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../../artists">Artists</a></li>
+              <li class="breadcrumb-item"><a class="b-name" href="../../artists">Artists</a></li>
               <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
             </ol>
         </nav>
@@ -28,16 +28,16 @@
               </div>
           </div>
           <div class="col-lg-5">
-              <p class="artist-description" style="font-style:italic; font-size:x-large; white-space: pre-line;">{{data.description}}</p>
+              <p class="artist-description">{{data.description}}</p>
           </div>
-        </div>    
-        
+        </div>
+
     </div>
 
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
           <div id="carouselEvents" class="carousel slide" data-bs-ride="carousel">
-            
+
           <!-- Content Row-->
           <div class="carousel-inner">
             <!-- Content Row-->
@@ -126,6 +126,9 @@ p{
 .artist-description{
   text-align: justify;
   text-align-last: center;
+  font-style:italic;
+  font-size: large;
+  white-space: pre-line;
 }
 .artist-info{
   white-space: nowrap;
@@ -142,6 +145,9 @@ p{
   display: inline-block;
 }
 .social-icon:hover{
+  color: #FFAD42;
+}
+.b-name{
   color: #FFAD42;
 }
 </style>

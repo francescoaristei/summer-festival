@@ -142,7 +142,7 @@ const pageContentObject = {
         introduction:"The festival will take place in several historical and cultural places scattered around the city to make you experience art at its fullest.\nIn this page you will find all the places in which the events will occur during the festival.\nClicking on the event you will be displayed more info about the place and a list of the events that it will host.\nStart your festival journey and experience here and discover them all!"
     },
     allEvents:{
-        title:"ALL EVENTS",
+        title:"EVENTS",
         img: "../assets/serviceTypes/all_services.jpg",
         introduction: "The festival will be composed of a variety of events, ranging from Music concert to Ballet show and Opera representation.\nThe festival tries appositely to fullfil the immense artistic spectrum todays artists can offer us, trying to attract the most different and diverse audience."
     },

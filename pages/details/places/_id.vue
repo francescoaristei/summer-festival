@@ -1,13 +1,13 @@
 
 <template>
-  <section class="content-section">
+  <section class="content-section" style="margin-top: 5vw">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <div class="container px-4 px-lg-5">
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="../../places">Places</a></li>
+            <li class="breadcrumb-item"><a class="b-name" href="../../places">Places</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ data.name }}</li>
           </ol>
         </nav>
@@ -19,7 +19,7 @@
       <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
           <div class="col-lg-7" style="margin-bottom: 10vw;"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) :alt="img" /></div>
           <div class="col-lg-5">
-              <p class="place-description" style="font-style:italic; font-size: x-large; white-space: pre-line;">{{data.description}}</p>
+              <p class="place-description">{{data.description}}</p>
           </div>
       </div>
       <div class="gmap_canvas" align="center">
@@ -31,7 +31,7 @@
     <div class="bottom-list">
       <div class="container px-4 px-lg-5">
         <div id="carouselEvents" class="carousel slide" data-bs-ride="carousel">
-          
+
           <!-- Content Row-->
           <div class="carousel-inner">
             <h4 style="margin-top: 2vw; margin-bottom: 1vw; text-align:center">EVENTS TAKING PLACE HERE</h4>
@@ -130,6 +130,11 @@ iframe{
 .place-description{
   text-align: justify;
   text-align-last: center;
-  
+  font-style:italic;
+  font-size: large;
+  white-space: pre-line;
+}
+.b-name{
+  color: #FFAD42;
 }
 </style>
