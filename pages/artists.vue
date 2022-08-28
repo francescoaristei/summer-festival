@@ -3,6 +3,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <header class="masthead">
+          <span role="img" aria-label="artists"> </span>
             <div class="container position-center px-4 px-lg-5 py-5">
                 <div class="row gx-2 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-2 py-5">

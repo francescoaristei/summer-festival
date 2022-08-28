@@ -3,6 +3,7 @@
         <!--<header id="header">-->
             <!-- Background image -->
              <div id="festival" class="bg-image shadow-2-strong">
+                <span role="img" aria-label="festival"> </span>
                 <div class="desc1" > 
                     <p class="font-weight-bold">
                         THE MILAN ARTS EXPERIENCE IS A SENSATIONAL FESTIVAL YOU MUST JOIN! SCROLL DOWN TO DISCOVER WHAT IT HAS TO OFFER!
@@ -10,32 +11,35 @@
                 </div>
             </div>
             <div id="events" class="bg-image shadow-2-strong">
+                <span role="img" aria-label="events"> </span>
                 <div class="desc2" > 
                     <p class="font-weight-bold">
                         THE EVENTS OFFERED BELONG TO ALL THE DIFFERENT ARTS, FROM MUSIC CONCERT, TO OPERA SHOWS, BALLET CLASSES AND SO ON...
                     </p>
 
-                    <nuxt-link to="/events" class="text-white me-4">
+                    <nuxt-link to="/events" class="text-white">
                         <br ><u id="link">Find out more about the events!</u> 
                     </nuxt-link>
                 </div>
             </div>
             <div id="places" class="bg-image shadow-2-strong">
+                <span role="img" aria-label="places"> </span>
                 <div class="desc3" >
                     <p class="font-weight-bold">
                         THE EVENTS ARE HELD IN THE MOST SUGGESTIVE AND FASCINATING LOCATIONS MILAN AND VERONA HAVE TO OFFER!
                     </p>
-                    <nuxt-link to="/places" class="text-white me-4">
+                    <nuxt-link to="/places" class="text-white">
                         <br> <u id="link">Find out more about the places!</u> 
                     </nuxt-link>
                 </div>
             </div>
             <div id="artists" class="bg-image shadow-2-strong">
+                <span role="img" aria-label="artists"> </span>
                 <div class="desc4" >
                     <p class="font-weight-bold">
                         THE LIST OF ARTISTS IS ALMOST INFINITE! THE ORGANIZERS WORKED VARY HARD TO REACH THE MOST CREATIVE PEOPLE IN THE WORLD!
                     </p>
-                    <nuxt-link to="/artists" class="text-white me-4">
+                    <nuxt-link to="/artists" class="text-white">
                         <br> <u id="link">Find out more about the artists!</u>
                     </nuxt-link>
                 </div>
@@ -151,7 +155,7 @@
         font-size: 1.7vw;
     }
 
-    .text-white.me-4{
+    .text-white{
         text-align: center;
         margin: auto 0;
     }

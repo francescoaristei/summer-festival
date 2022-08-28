@@ -6,7 +6,7 @@
     </nuxt-link>
     <div class="caption-content">
         <h2>{{name}}</h2>
-        <!--<p class="lead mb-0">{{name}}</p>-->
+        <h4 v-if="typeOfCard === 'events'"> {{date}}</h4>
     </div>
   </div>
 </template>

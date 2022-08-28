@@ -16,10 +16,17 @@
               <nuxt-link :to="`/details/places` + `/${place.id}`" class="btn btn-lg active" id="place" >
                 {{ place.name }}
                 </nuxt-link>
-          </div>
+
+                <div class="tickets">
+                  <a class="social-icon" :href = "data.ticket"  target="_blank">
+                    <img src='../../../static/tickets.svg' alt="logo" width="50vw">
+                  </a>
+                </div>
+            </div>
         </div>
         <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
-            <div class="col-lg-7" style="margin-bottom: 10vw;" ><img class="img-fluid rounded mb-4 mb-lg-0"  :src=getImgUrl(data.img) alt="..." /></div>
+            <div class="col-lg-7" style="margin-bottom: 10vw;" ><img class="img-fluid rounded mb-4 mb-lg-0"  :src=getImgUrl(data.img) :alt="img" /></div>
+            
             <div class="col-lg-5">
                 <p class="event-description" style="font-style:italic; font-size: x-large; white-space: pre-line;">{{data.description}}</p>
             </div>
@@ -171,6 +178,7 @@ p{
   text-align : center;
   text-decoration : none;
   border-radius: 25px;
+  margin-bottom: 2vw;
 }
 
 #place:hover {
@@ -179,5 +187,7 @@ p{
   background-color : #828282;
   cursor : pointer;
 }
+
+
 
 </style>

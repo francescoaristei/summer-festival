@@ -17,7 +17,7 @@ export default async (models) => {
                 “Si tu ne m'aimes pas, je t'aime/Si je t'aime, prends garde à toi!” (If you don't love me, I love you/If I love you, you'd better watch out!)`,
             type: "Opera",
             date: "27-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 2
         },
         {
@@ -34,7 +34,7 @@ export default async (models) => {
                 to draw in and celebrate the world of international dance and ballet.`,
             type: "Dance",
             date: "20-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 1
         },
         {
@@ -48,7 +48,7 @@ export default async (models) => {
                 The evening event will be presented by Eleonoire Casalegno and Aurora Ramazzotti, with Gabriele Vagnato, a young and very popular content creator.`,
             type: "Music",
             date: "30-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 4
         },
         {
@@ -63,7 +63,7 @@ export default async (models) => {
                 will be top ballet stars from the most prestigious companies.`,
             type: "Dance",
             date: "05-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId:2
         },
         {
@@ -78,7 +78,7 @@ export default async (models) => {
                 in the name of that sentiment that ”is the pulse/Of the whole universe/Mysterious and proud/Torture and delight to the heart!" `,
             type: "Opera",
             date: "10-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId:2
         },
         {
@@ -93,7 +93,7 @@ export default async (models) => {
                 Don't miss out this fantastic opportunities to have fun together with your friends!`,
             type: "Music",
             date: "07-09-2022 to 09-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 3
         },
         {
@@ -110,7 +110,7 @@ export default async (models) => {
                 The opening theme song of the event will be performed live, as in previous editions, by bassist Saturnino.`,
             type: "Music",
             date: "21-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId:4
         },
         {
@@ -127,7 +127,7 @@ export default async (models) => {
                 Two days of music, shows, meetings, food and of course races. I can't wait".`,
             type: "Music",
             date: "25-08-2022 and 26-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 5
         },
         {
@@ -143,7 +143,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "10-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 3
         },
         {
@@ -163,7 +163,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "12-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 1
         },
 
@@ -180,7 +180,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "13-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 3,
         },
 
@@ -196,7 +196,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "06-09-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 5
         },
         {
@@ -213,7 +213,7 @@ export default async (models) => {
             `,
             type: "Opera",
             date: "28-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 1
 
         },
@@ -231,7 +231,7 @@ export default async (models) => {
             The general program includes: meetings, exhibitions, competitions, video productions and shows.`,
             type: "Dance",
             date: "12-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 4
         },
         {
@@ -246,7 +246,7 @@ export default async (models) => {
             `,
             type: "Music",
             date: "11-08-2022",
-            ticket: "FILL",
+            ticket: "https://www.ticketone.it/",
             placeId: 5
 
         }

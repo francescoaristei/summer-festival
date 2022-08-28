@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
          <!-- Page Header-->
         <header class="masthead">
+          <span role="img" aria-label="events"> </span>
             <div class="container position-center px-4 px-lg-5 py-5">
                 <div class="row gx-2 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-2 py-5">
@@ -21,7 +22,7 @@
         </div>
 
         <!--<div class="container position-center px-4 px-lg-5 py-5" role="toolbar" aria-label="Toolbar with button groups">-->
-          <div class="buttons" style="margin-left: 9.5vw; width: 100%;">
+          <div class="btn-toolbar" role="toolbar"  style="justify-content: center; width: 100%;">
             <div class="btn-group mr-2" role="group" aria-label="First group">
               <button class="btn btn-lg active" type="button" v-on:click="filterEvents('All')">All</button>
             </div>
@@ -121,14 +122,14 @@ export default {
   color : black;
   text-align : center;
   text-decoration : none;
-  /*border-radius: 25px;*/
 }
 
 .btn-group.mr-2{
     display: inline-grid;
     /*grid-template-columns: 1fr 1fr;*/
     width: 20%;
-    grid-gap: 0.5vw;
+    margin-right: 1vw;
+    grid-gap: 1vw;
   }
 
 .btn.btn-lg.active:hover {

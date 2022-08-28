@@ -16,7 +16,7 @@
       </div>
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
-          <div class="col-lg-7" style="margin-bottom: 10vw;"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) alt="..." />
+          <div class="col-lg-7" style="margin-bottom: 10vw;"><img class="img-fluid rounded mb-4 mb-lg-0" :src=getImgUrl(data.img) :alt="img" />
               <div class="artist-info">
                 <p class="info"> FOLLOW ON  :
                 <a class="social-icon" :href = "data.info"  target="_blank" >

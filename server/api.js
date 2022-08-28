@@ -127,7 +127,7 @@ const pageContentObject = {
         when: "The festival takes place on multiple dates starting from June until September.\n" +
           "Each event, in fact, takes place not only in different locations but also on multiple dates.",
         where:"The festival offers multiple events in different places, mainly located in Milan with the exception of the beautiful Verona arena",
-        map: "https://www.google.com/maps/d/u/1/embed?mid=1rThwlxeZznE2nn-ZOFixr3rV0bVzHZE&ehbc=2E312F"
+        map: "https://www.google.com/maps/d/u/0/embed?mid=1XpRdd5OZ5firVxca0cVW7jKA7cVaCkg&ehbc=2E312F"
     },
     contactUs:{
         title: "CONTACT US",
