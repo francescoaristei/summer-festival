@@ -11,7 +11,7 @@
 
 The website was built for a summer festival event, in order to promote artists and events that will take place during the festival other than the festival itself. It includes information about the festival *events*, *artists* and a list of *places* where the events will be hosted.
 
-The project is part of the *Hypermedia Application (Web and Multimedia)* class offered by *Politecnico di Milano*.
+The project is part of the examination for the *Hypermedia Application (Web and Multimedia)* class offered by *Politecnico di Milano*.
 
 ## Technical architecture
 
