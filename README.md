@@ -1,68 +1,35 @@
-# Final Project template
+[Link to the website](https://summer-festival.herokuapp.com)
 
-## Build Setup
+# Team ****🧑🏼‍💻****
 
-```bash
-# install dependencies
-$ npm install
+- [Francesco Aristei](https://github.com/francescoaristei)
+- [Leonardo Barone](https://github.com/baroneleonardo)
+- [Michele Lorenzo Miranda](https://github.com/michelelorenzo)
+- [Andrea Verrone](https://github.com/AndreaVerrone)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# Project description
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+The website was built for a summer festival event, in order to promote artists and events that will take place during the festival other than the festival itself. It includes information about the festival *events*, *artists* and a list of *places* where the events will be hosted.
 
-# generate static project
-$ npm run generate
-```
+The project is part of the *Hypermedia Application (Web and Multimedia)* class offered by *Politecnico di Milano*.
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## Technical architecture
 
-## Special Directories
+The website is built using HTML, CSS and is based on the Nuxt framework, which makes it easy to create and manage static and dynamic websites.
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+All pages were created in the ‘pages’ folder. The ‘assets’ contains all the images displayed in the several pics, ‘static’ contains vector images for buttons and icons. 
 
-### `assets`
+### Nuxt
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+the framework has been very helpful for the creation of dynamic content. All the cards present in the website are dynamically generated, making it easier for development. Examples of dynamic pages are: events, artists, places. Every information is retrieved from the database via api and then correctly shown on the page according to the dynamic id. The static pages fetch data from the database as well. (is this still true? we gotta check) 
+The basic elements of the pages are reused thanks to components: footer, header, tab-bar.
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+- ROUTING: To navigate and route we used NuxtLink and $router
 
-### `components`
+### Storage and database
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+All content of the website is stored on a database. For local development we used **PostgresSQL** to store all needed info. For production and release purposes, instead, the team used the **Heroku** platform. The framework to manage data and storage used is **Sequelize**. 
+The server has 2 *js* file, `api.js` and `initialize.js`: 
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+1. *api.js* contains all the functions to create the database’s tables and association. It also contains all the apis to get data from the database and static pages data.
+2. *initialize.js* accounts for the tables data filling. Every table was easily populated thanks to the `bulkCreate` function offered by **Sequelize**. 
