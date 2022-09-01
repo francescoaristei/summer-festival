@@ -46,11 +46,6 @@ export default {
   components: {
     'card-el' : CardEl
   },
-  data() {
-    return {
-      filter: ""
-    }
-  },
   async asyncData({ $axios }) {
     try{
         const [ data, info] = await Promise.all([$axios.get('/api/artists'),
@@ -62,6 +57,23 @@ export default {
     } catch(error){
         console.log(error);
     }
+  },
+  data() {
+    return {
+      filter: ""
+    }
+  },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Artists from different countries and genres who will join the Milano Arts Experience festival.'
+          }
+        ]
+      }
   },
 }
 </script>

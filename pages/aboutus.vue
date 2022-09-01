@@ -35,7 +35,7 @@
 
 export default {
   name: 'AboutUs',
-
+  
   async asyncData({ $axios }) {
     try{
         const { data } = await $axios.get('api/page-info/aboutUs')
@@ -46,6 +46,20 @@ export default {
         console.log(error);
     }
   },
+
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Information about the festival and who organizes the Milano Arts Experience festival'
+          }
+        ]
+      }
+    }
+
 }
 </script>
 

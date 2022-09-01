@@ -56,12 +56,6 @@ export default {
     'card-el': CardEl,
   },
 
-  data(){
-    return{
-        filter:""
-    }
-
-  },
   async asyncData({ $axios }) {
     try{
         const [ data, info] = await Promise.all([$axios.get('/api/events'),
@@ -74,14 +68,26 @@ export default {
         console.log(error);
     }
   },
-  methods: {
-    filterEvents: function(filter) {
-      this.filter = filter
+
+  data(){
+    return{
+        filter:""
     }
   },
-
-
-
+  
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Events that will take place during the Milano Arts Experience festival'
+          }
+        ]
+      }
+    },
+  
   computed:{
     filteredEvents: function(){
       return this.events.filter((event) =>{
@@ -91,7 +97,13 @@ export default {
         else{
             return event
         }
-    });
+      });
+    }
+  },
+
+  methods: {
+    filterEvents: function(filter) {
+      this.filter = filter
     }
   },
 }

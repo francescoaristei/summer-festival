@@ -8,14 +8,14 @@ export default {
     }
   ],
   head: {
-    title: 'summerfestival',
+    title: 'Milan Arts Experience',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Milan Arts Experience is a summer festival held in Milan. It hosts artists from around the world and a wide variety of events to keep you entertained and let you have fun' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [

@@ -108,6 +108,19 @@ export default {
     }
   },
 
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Contacts of the organisation who planned the Milano Arts Experience festival'
+          }
+        ]
+      }
+  },
+  
   methods: {
     validateForm: function() {
       const name =  document.getElementById('name').value;

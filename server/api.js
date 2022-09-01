@@ -5,7 +5,7 @@ const initialize = require('./initialize').default
 app.use(express.json())
 
 // Development
-//const database = new Sequelize("postgres://aiateam:aiateam@localhost:5432/summerfestival")
+// const database = new Sequelize("postgres://aiateam:aiateam@localhost:5432/summerfestival")
 // Production
 
 
@@ -116,12 +116,10 @@ const pageContentObject = {
         title: "Milan Arts Experience",
         festival_description:
         `
-            Milan Arts Experience welcomes hundreds of thousands of people each summer and aims to bring the biggest names in the art industry
-            from the widest variety of genres.\nMilan Arts Experience, however, is not only about the artistic experiences,
-            but a whole lot more: It's about love, art and freedom in all possible forms!\nIt's a cultural festival offering visitors
-            the summer of a lifetime full of concerts, art programs, performances and much more.\nIs a place for for you to truly be yourself!
-            Life at the festival just never stops.\nEach day, the greatest of bands and artists come on and walk off stage in the most spectacular scenes of Milan and Verona:\n
-            The Arena di Verona, the Teatro alla Scala, the Parco Sempione or the Stadio San Siro and so on.\nConcerts and artistic performances go on from early
+            Milan Arts Experience welcomes hundreds of thousands of people each summer and aims to bring the biggest names in the art industry from the widest variety of genres.\nMilan Arts Experience, however, is not only about the artistic experiences,
+            but a whole lot more: it's about love, art and freedom in all possible forms! It's a cultural festival offering visitors the summer of a lifetime full of concerts, art programs, performances and much more.\nIt is a place for for you to truly be yourself!
+            Life at the festival just never stops.\nEach day, the greatest of bands and artists come on and walk off stage in the most spectacular scenes of Milan and Verona: the Arena di Verona, the Teatro alla Scala, the Parco Sempione or the Stadio San Siro and so on.
+            \nConcerts and artistic performances go on from early
             afternoon every day and last until the break of dawn.\nIf you feel like catching a small break in-between gigs, you can choose from the widest scale of activities Milan has to offer,
             watching art site, getting artsy, doing sports offline or online or just chilling around the city.
         `,

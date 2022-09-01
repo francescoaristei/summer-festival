@@ -46,11 +46,6 @@ export default {
   components: {
     'card-el' : CardEl
   },
-  data() {
-    return {
-      filter: ""
-    }
-  },
   async asyncData({ $axios }) {
     try{
         const [ data, info] = await Promise.all([$axios.get('/api/places'),
@@ -63,6 +58,23 @@ export default {
         console.log(error);
     }
   },
+  data() {
+    return {
+      filter: ""
+    }
+  },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Places of Milano Arts Experience festival in which event will be host'
+          }
+        ]
+      }
+    },
 }
 </script>
 
