@@ -162,4 +162,7 @@ p{
 .b-name{
   color: #FFAD42;
 }
+.site-heading{
+  text-align: center;
+}
 </style>
