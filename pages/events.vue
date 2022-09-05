@@ -74,7 +74,7 @@ export default {
         filter:""
     }
   },
-  
+
   head() {
       return {
         title: this.title,
@@ -87,7 +87,7 @@ export default {
         ]
       }
     },
-  
+
   computed:{
     filteredEvents: function(){
       return this.events.filter((event) =>{
@@ -120,12 +120,15 @@ export default {
   background-color : #aaaaaa;
   transition : 0.3s;
   color : black;
-  text-decoration : none;    
+  text-decoration : none;
   display: inline-grid;
   width: 20%;
   margin-right: 2vw;
 }
-
+.btn.btn-lg.active:focus{
+  box-shadow : 0px 0px 1px 8px #aaaaaa;
+  background-color : #828282;
+}
 .btn.btn-lg.active:hover {
   transition : 0.3s;
   box-shadow : 0px 0px 1px 8px #aaaaaa;
