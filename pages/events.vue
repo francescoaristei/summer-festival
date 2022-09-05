@@ -126,8 +126,7 @@ export default {
   margin-right: 2vw;
 }
 .btn.btn-lg.active:focus{
-  box-shadow : 0px 0px 1px 8px #aaaaaa;
-  background-color : #828282;
+  background-color : #FFAD42;
 }
 .btn.btn-lg.active:hover {
   transition : 0.3s;
