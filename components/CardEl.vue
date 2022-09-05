@@ -2,7 +2,7 @@
   <!--<div class="col-lg-6 py-5">-->
     <div :class="typeOfEl">
     <nuxt-link :to="`/details/` + typeOfCard + `/${id}`">
-    <img class="img-fluid" :src="getImgUrl(img, typeOfCard)"  :alt="img" />
+    <img class="img-fluid" :src="getImgUrl(img, typeOfCard)"  :alt="name" />
     </nuxt-link>
     <div class="caption-content">
         <h2>{{name}}</h2>
