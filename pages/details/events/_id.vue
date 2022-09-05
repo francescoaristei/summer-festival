@@ -26,7 +26,7 @@
         </div>
         <div class="row gx-4 gx-lg-5 my-5 gy-5 shadow-lg">
             <div class="col-lg-7" style="margin-bottom: 10vw;" ><img class="img-fluid rounded mb-4 mb-lg-0"  :src=getImgUrl(data.img) :alt="img" /></div>
-            
+
             <div class="col-lg-5">
                 <p class="event-description">{{data.description}}</p>
             </div>
@@ -206,6 +206,17 @@ p{
 
 .b-name{
   color: #FFAD42;
+}
+
+.social-icon{
+  border-radius: 25%;
+  padding: 20px 20px;
+}
+.social-icon:hover{
+  transition : 0.3s;
+  background-color: #aaaaaa;
+  cursor : pointer;
+  background-size: 50%auto;
 }
 
 </style>
