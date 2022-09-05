@@ -92,6 +92,18 @@ export default {
       console.log(error);
     }
   },
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Information about the artist who will join the Milano Arts Experience'
+          }
+        ]
+      }
+    },
   methods: {
     getImgUrl(img) {
       return require(`../../../assets/artists/` + img + `.jpg`)
