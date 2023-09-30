@@ -1,3 +1,6 @@
+Website broken because Heroku cancelled free services, therefore the PostreSQL database has been detached.
+If it will be restored, the link to the website is:
+
 [Link to the website](https://summer-festival.herokuapp.com)
 
 # Team ****🧑🏼‍💻****
